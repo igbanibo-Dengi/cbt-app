@@ -33,25 +33,29 @@ const Quiz = () => {
     ];
 
     const [currentQuestionIndex, setCurrentQuestionIndex] = useState(0);
-    const [selectedOption, setSelectedOption] = useState<string | null>(null);
-    const [isAnswered, setIsAnswered] = useState<boolean>(false);
+    const [answers, setAnswers] = useState<{ [key: number]: string | null }>({});
     const [correctAnswers, setCorrectAnswers] = useState(0);
     const [showScore, setShowScore] = useState<boolean>(false);
 
     const currentQuestion = questions[currentQuestionIndex];
 
     const handleOptionClick = (option: string) => {
-        setSelectedOption(option);
-        setIsAnswered(true);
-        if (option === currentQuestion.correctAnswer) {
-            setCorrectAnswers(correctAnswers + 1);
+        const isCorrect = option === currentQuestion.correctAnswer;
+
+        // Store the selected answer and update correctAnswers if applicable
+        setAnswers(prev => ({
+            ...prev,
+            [currentQuestionIndex]: option,
+        }));
+
+        if (isCorrect) {
+            setCorrectAnswers(prev => prev + 1);
         }
     };
 
     const handleNext = () => {
         if (currentQuestionIndex < questions.length - 1) {
             setCurrentQuestionIndex(currentQuestionIndex + 1);
-            resetState();
         } else {
             setShowScore(true);
         }
@@ -60,13 +64,14 @@ const Quiz = () => {
     const handlePrevious = () => {
         if (currentQuestionIndex > 0) {
             setCurrentQuestionIndex(currentQuestionIndex - 1);
-            resetState();
         }
     };
 
-    const resetState = () => {
-        setSelectedOption(null);
-        setIsAnswered(false);
+    const resetQuiz = () => {
+        setCurrentQuestionIndex(0);
+        setAnswers({});
+        setCorrectAnswers(0);
+        setShowScore(false);
     };
 
     const calculateScorePercentage = () => {
@@ -78,7 +83,13 @@ const Quiz = () => {
             {showScore ? (
                 <div className="text-center">
                     <h1 className="text-2xl font-bold mb-4">Quiz Completed!</h1>
-                    <p className="text-xl">Your score: {calculateScorePercentage().toFixed(2)}%</p>
+                    <p className="text-xl mb-4">Your score: {calculateScorePercentage().toFixed(2)}%</p>
+                    <button
+                        onClick={resetQuiz}
+                        className="px-4 py-2 bg-blue-500 text-white rounded"
+                    >
+                        Reset Quiz
+                    </button>
                 </div>
             ) : (
                 <>
@@ -88,11 +99,15 @@ const Quiz = () => {
                             <li key={option} className="mb-2">
                                 <button
                                     onClick={() => handleOptionClick(option)}
-                                    disabled={isAnswered}
+                                    disabled={answers[currentQuestionIndex] !== undefined}
                                     className={`w-full p-3 text-left border rounded-lg
-                    ${isAnswered && option === currentQuestion.correctAnswer ? 'bg-green-200' : ''}
-                    ${isAnswered && option === selectedOption && option !== currentQuestion.correctAnswer ? 'bg-red-200' : ''}
-                    ${!isAnswered ? 'hover:bg-gray-100' : ''}
+                    ${answers[currentQuestionIndex] === option
+                                            ? option === currentQuestion.correctAnswer
+                                                ? 'bg-green-200'
+                                                : 'bg-red-200'
+                                            : ''
+                                        }
+                    ${answers[currentQuestionIndex] === undefined ? 'hover:bg-gray-100' : ''}
                   `}
                                 >
                                     {option}
@@ -100,9 +115,9 @@ const Quiz = () => {
                             </li>
                         ))}
                     </ul>
-                    {isAnswered && (
+                    {answers[currentQuestionIndex] !== undefined && (
                         <div className="mt-4">
-                            {selectedOption === currentQuestion.correctAnswer ? (
+                            {answers[currentQuestionIndex] === currentQuestion.correctAnswer ? (
                                 <p className="text-green-600 font-medium">Correct! 🎉</p>
                             ) : (
                                 <p className="text-red-600 font-medium">
@@ -122,8 +137,8 @@ const Quiz = () => {
                         </button>
                         <button
                             onClick={handleNext}
-                            disabled={!isAnswered}
-                            className="px-4 py-2 bg-blue-500 text-white rounded disabled:bg-gray-300"
+                            className="px-4 py-2 bg-blue-500 text-white rounded"
+                            disabled={answers[currentQuestionIndex] === undefined}
                         >
                             {currentQuestionIndex === questions.length - 1 ? 'Finish' : 'Next'}
                         </button>
