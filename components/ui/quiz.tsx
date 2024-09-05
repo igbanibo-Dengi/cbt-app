@@ -1,6 +1,6 @@
 'use client'
 
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 
 type Question = {
     questionText: string;
@@ -9,7 +9,7 @@ type Question = {
 };
 
 const Quiz = () => {
-    const questions: Question[] = [
+    const initialQuestions: Question[] = [
         {
             questionText: 'What is the capital of France?',
             options: ['Berlin', 'Madrid', 'Paris', 'Rome'],
@@ -32,17 +32,31 @@ const Quiz = () => {
         },
     ];
 
+    const [questions, setQuestions] = useState<Question[]>([]);
     const [currentQuestionIndex, setCurrentQuestionIndex] = useState(0);
     const [answers, setAnswers] = useState<{ [key: number]: string | null }>({});
     const [correctAnswers, setCorrectAnswers] = useState(0);
     const [showScore, setShowScore] = useState<boolean>(false);
 
-    const currentQuestion = questions[currentQuestionIndex];
+    // Fisher-Yates shuffle algorithm to randomize questions
+    const shuffleArray = (array: Question[]) => {
+        const shuffled = [...array];
+        for (let i = shuffled.length - 1; i > 0; i--) {
+            const j = Math.floor(Math.random() * (i + 1));
+            [shuffled[i], shuffled[j]] = [shuffled[j], shuffled[i]];
+        }
+        return shuffled;
+    };
+
+    // Shuffle the questions when the component mounts
+    useEffect(() => {
+        const shuffledQuestions = shuffleArray(initialQuestions);
+        setQuestions(shuffledQuestions);
+    }, []); // Empty dependency array ensures it runs once on component mount
 
     const handleOptionClick = (option: string) => {
-        const isCorrect = option === currentQuestion.correctAnswer;
+        const isCorrect = option === questions[currentQuestionIndex].correctAnswer;
 
-        // Store the selected answer and update correctAnswers if applicable
         setAnswers(prev => ({
             ...prev,
             [currentQuestionIndex]: option,
@@ -72,6 +86,10 @@ const Quiz = () => {
         setAnswers({});
         setCorrectAnswers(0);
         setShowScore(false);
+
+        // Shuffle the questions again for a new set
+        const shuffledQuestions = shuffleArray(initialQuestions);
+        setQuestions(shuffledQuestions);
     };
 
     const calculateScorePercentage = () => {
@@ -93,16 +111,16 @@ const Quiz = () => {
                 </div>
             ) : (
                 <>
-                    <h1 className="text-2xl font-bold mb-4">{currentQuestion.questionText}</h1>
+                    <h1 className="text-2xl font-bold mb-4">{questions[currentQuestionIndex]?.questionText}</h1>
                     <ul>
-                        {currentQuestion.options.map((option) => (
+                        {questions[currentQuestionIndex]?.options.map((option) => (
                             <li key={option} className="mb-2">
                                 <button
                                     onClick={() => handleOptionClick(option)}
                                     disabled={answers[currentQuestionIndex] !== undefined}
                                     className={`w-full p-3 text-left border rounded-lg
                     ${answers[currentQuestionIndex] === option
-                                            ? option === currentQuestion.correctAnswer
+                                            ? option === questions[currentQuestionIndex].correctAnswer
                                                 ? 'bg-green-200'
                                                 : 'bg-red-200'
                                             : ''
@@ -117,12 +135,12 @@ const Quiz = () => {
                     </ul>
                     {answers[currentQuestionIndex] !== undefined && (
                         <div className="mt-4">
-                            {answers[currentQuestionIndex] === currentQuestion.correctAnswer ? (
+                            {answers[currentQuestionIndex] === questions[currentQuestionIndex].correctAnswer ? (
                                 <p className="text-green-600 font-medium">Correct! 🎉</p>
                             ) : (
                                 <p className="text-red-600 font-medium">
                                     Incorrect. The correct answer is{' '}
-                                    <span className="font-bold">{currentQuestion.correctAnswer}</span>.
+                                    <span className="font-bold">{questions[currentQuestionIndex].correctAnswer}</span>.
                                 </p>
                             )}
                         </div>
