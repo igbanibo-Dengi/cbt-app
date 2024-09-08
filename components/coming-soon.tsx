@@ -96,10 +96,6 @@ export default function ComingSoon() {
         </CardContent>
         <CardFooter className="flex flex-col md:flex-row justify-between items-center">
           <div className="flex items-center text-sm text-muted-foreground">
-            <Clock className="w-4 h-4 mr-2" />
-            Launching September 1, 2023
-          </div>
-          <div className="flex items-center text-sm text-muted-foreground">
             <Bell className="w-4 h-4 mr-2" />
             Stay tuned for updates
           </div>
