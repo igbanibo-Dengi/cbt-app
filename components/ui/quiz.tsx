@@ -1,170 +1,197 @@
 'use client'
 
-import { useEffect, useState } from 'react';
+import { useEffect, useState } from 'react'
+import { Button } from "@/components/ui/button"
+import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card"
+import { RadioGroup, RadioGroupItem } from "@/components/ui/radio-group"
+import { Label } from "@/components/ui/label"
+import { Progress } from "@/components/ui/progress"
+import { AlertCircle, CheckCircle2, Clock } from "lucide-react"
+import { initialQuestions } from '../quizData' // Assuming this contains all 200+ questions
+import Link from 'next/link'
 
 type Question = {
-    questionText: string;
-    options: string[];
-    correctAnswer: string;
-};
+    questionText: string
+    options: string[]
+    correctAnswer: string
+}
 
-const Quiz = () => {
-    const initialQuestions: Question[] = [
-        {
-            questionText: 'What is the capital of France?',
-            options: ['Berlin', 'Madrid', 'Paris', 'Rome'],
-            correctAnswer: 'Paris',
-        },
-        {
-            questionText: 'Which planet is known as the Red Planet?',
-            options: ['Earth', 'Mars', 'Jupiter', 'Venus'],
-            correctAnswer: 'Mars',
-        },
-        {
-            questionText: 'What is the largest ocean on Earth?',
-            options: ['Atlantic Ocean', 'Indian Ocean', 'Arctic Ocean', 'Pacific Ocean'],
-            correctAnswer: 'Pacific Ocean',
-        },
-        {
-            questionText: 'Who wrote "Hamlet"?',
-            options: ['Charles Dickens', 'Leo Tolstoy', 'William Shakespeare', 'Mark Twain'],
-            correctAnswer: 'William Shakespeare',
-        },
-    ];
+export default function Quiz({ title = "ITIL 4 Foundation Test" }: { title?: string }) {
+    const [questions, setQuestions] = useState<Question[]>([])
+    const [currentQuestionIndex, setCurrentQuestionIndex] = useState(0)
+    const [answers, setAnswers] = useState<{ [key: number]: string | null }>({})
+    const [correctAnswers, setCorrectAnswers] = useState(0)
+    const [showScore, setShowScore] = useState<boolean>(false)
+    const [timeRemaining, setTimeRemaining] = useState(60 * 60) // 60 minutes in seconds
 
-    const [questions, setQuestions] = useState<Question[]>([]);
-    const [currentQuestionIndex, setCurrentQuestionIndex] = useState(0);
-    const [answers, setAnswers] = useState<{ [key: number]: string | null }>({});
-    const [correctAnswers, setCorrectAnswers] = useState(0);
-    const [showScore, setShowScore] = useState<boolean>(false);
-
-    // Fisher-Yates shuffle algorithm to randomize questions
     const shuffleArray = (array: Question[]) => {
-        const shuffled = [...array];
+        const shuffled = [...array]
         for (let i = shuffled.length - 1; i > 0; i--) {
-            const j = Math.floor(Math.random() * (i + 1));
-            [shuffled[i], shuffled[j]] = [shuffled[j], shuffled[i]];
+            const j = Math.floor(Math.random() * (i + 1))
+                ;[shuffled[i], shuffled[j]] = [shuffled[j], shuffled[i]]
         }
-        return shuffled;
-    };
+        return shuffled
+    }
 
-    // Shuffle the questions when the component mounts
     useEffect(() => {
-        const shuffledQuestions = shuffleArray(initialQuestions);
-        setQuestions(shuffledQuestions);
-    }, []); // Empty dependency array ensures it runs once on component mount
+        const shuffledQuestions = shuffleArray(initialQuestions).slice(0, 40)
+        setQuestions(shuffledQuestions)
+    }, [])
+
+    useEffect(() => {
+        const timer = setInterval(() => {
+            setTimeRemaining((prevTime) => {
+                if (prevTime <= 1) {
+                    clearInterval(timer)
+                    setShowScore(true)
+                    return 0
+                }
+                return prevTime - 1
+            })
+        }, 1000)
+
+        return () => clearInterval(timer)
+    }, [])
 
     const handleOptionClick = (option: string) => {
-        const isCorrect = option === questions[currentQuestionIndex].correctAnswer;
+        const isCorrect = option === questions[currentQuestionIndex].correctAnswer
 
-        setAnswers(prev => ({
+        setAnswers((prev) => ({
             ...prev,
             [currentQuestionIndex]: option,
-        }));
+        }))
 
         if (isCorrect) {
-            setCorrectAnswers(prev => prev + 1);
+            setCorrectAnswers((prev) => prev + 1)
         }
-    };
+    }
 
     const handleNext = () => {
         if (currentQuestionIndex < questions.length - 1) {
-            setCurrentQuestionIndex(currentQuestionIndex + 1);
+            setCurrentQuestionIndex(currentQuestionIndex + 1)
         } else {
-            setShowScore(true);
+            setShowScore(true)
         }
-    };
+    }
 
     const handlePrevious = () => {
         if (currentQuestionIndex > 0) {
-            setCurrentQuestionIndex(currentQuestionIndex - 1);
+            setCurrentQuestionIndex(currentQuestionIndex - 1)
         }
-    };
+    }
+
+    const handleSubmit = () => {
+        setShowScore(true)
+    }
 
     const resetQuiz = () => {
-        setCurrentQuestionIndex(0);
-        setAnswers({});
-        setCorrectAnswers(0);
-        setShowScore(false);
+        setCurrentQuestionIndex(0)
+        setAnswers({})
+        setCorrectAnswers(0)
+        setShowScore(false)
+        setTimeRemaining(60 * 60)
 
-        // Shuffle the questions again for a new set
-        const shuffledQuestions = shuffleArray(initialQuestions);
-        setQuestions(shuffledQuestions);
-    };
+        const shuffledQuestions = shuffleArray(initialQuestions).slice(0, 40)
+        setQuestions(shuffledQuestions)
+    }
 
     const calculateScorePercentage = () => {
-        return (correctAnswers / questions.length) * 100;
-    };
+        return (correctAnswers / questions.length) * 100
+    }
+
+    const formatTime = (seconds: number) => {
+        const minutes = Math.floor(seconds / 60)
+        const remainingSeconds = seconds % 60
+        return `${minutes}:${remainingSeconds.toString().padStart(2, '0')}`
+    }
+
+    if (showScore) {
+        return (
+            <Card className="w-full max-w-4xl mx-auto">
+                <CardHeader>
+                    <CardTitle>{title}</CardTitle>
+                    <CardDescription>Your test results</CardDescription>
+                </CardHeader>
+                <CardContent className="text-center">
+                    <p className="text-4xl font-bold mb-4">{calculateScorePercentage().toFixed(2)}%</p>
+                    <p className="text-lg">You got {correctAnswers} out of {questions.length} questions correct.</p>
+                </CardContent>
+                <CardFooter className="flex justify-between">
+                    <Button onClick={resetQuiz}>Retake Quiz</Button>
+                    <Button asChild>
+                        <Link href="/">Exit to Home</Link>
+                    </Button>
+                </CardFooter>
+            </Card>
+        )
+    }
 
     return (
-        <div className="max-w-md mx-auto mt-10 p-6 bg-white rounded-lg shadow-md">
-            {showScore ? (
-                <div className="text-center">
-                    <h1 className="text-2xl font-bold mb-4">Quiz Completed!</h1>
-                    <p className="text-xl mb-4">Your score: {calculateScorePercentage().toFixed(2)}%</p>
-                    <button
-                        onClick={resetQuiz}
-                        className="px-4 py-2 bg-blue-500 text-white rounded"
-                    >
-                        Reset Quiz
-                    </button>
-                </div>
-            ) : (
-                <>
-                    <h1 className="text-2xl font-bold mb-4">{questions[currentQuestionIndex]?.questionText}</h1>
-                    <ul>
-                        {questions[currentQuestionIndex]?.options.map((option) => (
-                            <li key={option} className="mb-2">
-                                <button
-                                    onClick={() => handleOptionClick(option)}
-                                    disabled={answers[currentQuestionIndex] !== undefined}
-                                    className={`w-full p-3 text-left border rounded-lg
-                    ${answers[currentQuestionIndex] === option
-                                            ? option === questions[currentQuestionIndex].correctAnswer
-                                                ? 'bg-green-200'
-                                                : 'bg-red-200'
-                                            : ''
-                                        }
-                    ${answers[currentQuestionIndex] === undefined ? 'hover:bg-gray-100' : ''}
-                  `}
-                                >
-                                    {option}
-                                </button>
-                            </li>
-                        ))}
-                    </ul>
-                    {answers[currentQuestionIndex] !== undefined && (
-                        <div className="mt-4">
-                            {answers[currentQuestionIndex] === questions[currentQuestionIndex].correctAnswer ? (
-                                <p className="text-green-600 font-medium">Correct! 🎉</p>
-                            ) : (
+        <Card className="w-full max-w-4xl mx-auto">
+            <CardHeader>
+                <CardTitle>{title}</CardTitle>
+                <CardDescription className="flex justify-between items-center">
+                    <span>Question {currentQuestionIndex + 1} of {questions.length}</span>
+                    <span className="flex items-center">
+                        <Clock className="w-4 h-4 mr-2" />
+                        Time remaining: {formatTime(timeRemaining)}
+                    </span>
+                </CardDescription>
+            </CardHeader>
+            <CardContent>
+                <Progress value={(currentQuestionIndex + 1) / questions.length * 100} className="mb-4" />
+                <h2 className="text-lg font-semibold mb-4">{questions[currentQuestionIndex]?.questionText}</h2>
+                <RadioGroup
+                    onValueChange={(value) => handleOptionClick(value)}
+                    value={answers[currentQuestionIndex] || ''}
+                >
+                    {questions[currentQuestionIndex]?.options.map((option, index) => (
+                        <div key={option} className="flex items-center space-x-2 mb-2">
+                            <RadioGroupItem value={option} id={`option-${index}`} disabled={answers[currentQuestionIndex] !== undefined} />
+                            <Label htmlFor={`option-${index}`} className="flex-grow p-2 rounded-md hover:bg-gray-100">
+                                {option}
+                            </Label>
+                        </div>
+                    ))}
+                </RadioGroup>
+                {answers[currentQuestionIndex] !== undefined && (
+                    <div className="mt-4 flex items-center">
+                        {answers[currentQuestionIndex] === questions[currentQuestionIndex].correctAnswer ? (
+                            <>
+                                <CheckCircle2 className="text-green-500 mr-2" />
+                                <p className="text-green-600 font-medium">Correct!</p>
+                            </>
+                        ) : (
+                            <>
+                                <AlertCircle className="text-red-500 mr-2" />
                                 <p className="text-red-600 font-medium">
                                     Incorrect. The correct answer is{' '}
                                     <span className="font-bold">{questions[currentQuestionIndex].correctAnswer}</span>.
                                 </p>
-                            )}
-                        </div>
-                    )}
-                    <div className="flex justify-between mt-6">
-                        <button
-                            onClick={handlePrevious}
-                            disabled={currentQuestionIndex === 0}
-                            className="px-4 py-2 bg-blue-500 text-white rounded disabled:bg-gray-300"
-                        >
-                            Previous
-                        </button>
-                        <button
-                            onClick={handleNext}
-                            className="px-4 py-2 bg-blue-500 text-white rounded"
-                            disabled={answers[currentQuestionIndex] === undefined}
-                        >
-                            {currentQuestionIndex === questions.length - 1 ? 'Finish' : 'Next'}
-                        </button>
+                            </>
+                        )}
                     </div>
-                </>
-            )}
-        </div>
-    );
-};
-
-export default Quiz;
+                )}
+            </CardContent>
+            <CardFooter className="flex flex-col md:flex-row gap-4 md:justify-between">
+                <div className="flex space-x-2 w-full md:w-fit justify-between md:justify-start">
+                    <Button onClick={handlePrevious} disabled={currentQuestionIndex === 0} variant="outline">
+                        Previous
+                    </Button>
+                    <Button
+                        onClick={handleNext}
+                        disabled={answers[currentQuestionIndex] === undefined}
+                    >
+                        {currentQuestionIndex === questions.length - 1 ? 'Finish' : 'Next'}
+                    </Button>
+                </div>
+                <div className="flex space-x-2 w-full md:w-fit justify-between md:justify-start">
+                    <Button onClick={handleSubmit} variant="default">Submit Test</Button>
+                    <Button asChild variant="outline">
+                        <Link href="/">Exit Test</Link>
+                    </Button>
+                </div>
+            </CardFooter>
+        </Card>
+    )
+}
