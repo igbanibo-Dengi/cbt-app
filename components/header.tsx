@@ -71,7 +71,7 @@ export default function Header() {
                         </nav>
                     </SheetContent>
                 </Sheet>
-                <span className="font-bold md:hidden">TestMaster</span>
+                <Link href="/"><span className="font-bold md:hidden">TestMaster</span></Link>
                 <div className="flex flex-1 items-center justify-end space-x-2">
                     <form onSubmit={(e) => e.preventDefault()} className={cn("hidden md:block", isSearchOpen && "flex")}>
                         <div className="relative">

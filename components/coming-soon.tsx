@@ -62,7 +62,7 @@ export default function ComingSoon() {
           </CardDescription>
         </CardHeader>
         <CardContent className="space-y-6">
-          <div className="grid grid-cols-4 gap-4 text-center">
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-4 text-center">
             {Object.entries(timeLeft).map(([unit, value]) => (
               <div key={unit} className="bg-primary/10 rounded-lg p-3">
                 <div className="text-3xl font-bold text-primary">{value}</div>
@@ -94,7 +94,7 @@ export default function ComingSoon() {
             </div>
           </form>
         </CardContent>
-        <CardFooter className="flex justify-between items-center">
+        <CardFooter className="flex flex-col md:flex-row justify-between items-center">
           <div className="flex items-center text-sm text-muted-foreground">
             <Clock className="w-4 h-4 mr-2" />
             Launching September 1, 2023

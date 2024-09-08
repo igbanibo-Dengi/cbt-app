@@ -7,7 +7,7 @@ import Link from "next/link"
 
 export function Homepage() {
   const courses = [
-    { title: "ITIL-4", icon: PenTool, description: "Algebra, Geometry, Calculus", href: "/itil-test" },
+    { title: "ITIL-4", icon: PenTool, description: " ", href: "/itil-test" },
     { title: "Science", icon: FlaskConical, description: "Physics, Chemistry, Biology", href: "/coming-soon" },
     { title: "Computer Science", icon: Code, description: "Programming, Algorithms", href: "/coming-soon" },
     { title: "Literature", icon: BookOpen, description: "English, World Literature, Poetry", href: "/coming-soon" },

@@ -16,7 +16,7 @@ type Question = {
     correctAnswer: string
 }
 
-export default function Quiz({ title = "ITIL 4 Foundation Test" }: { title?: string }) {
+export default function Quiz({ title }: { title?: string }) {
     const [questions, setQuestions] = useState<Question[]>([])
     const [currentQuestionIndex, setCurrentQuestionIndex] = useState(0)
     const [answers, setAnswers] = useState<{ [key: number]: string | null }>({})
