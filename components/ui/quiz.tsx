@@ -7,8 +7,20 @@ import { RadioGroup, RadioGroupItem } from "@/components/ui/radio-group"
 import { Label } from "@/components/ui/label"
 import { Progress } from "@/components/ui/progress"
 import { AlertCircle, CheckCircle2, Clock } from "lucide-react"
-import { initialQuestions } from '../quizData' // Assuming this contains all 200+ questions
+import { initialQuestions } from '../quizData'
+// Assuming this contains all 200+ questions
 import Link from 'next/link'
+import {
+    Dialog,
+    DialogContent,
+    DialogDescription,
+    DialogFooter,
+    DialogHeader,
+    DialogTitle,
+    DialogTrigger,
+} from "@/components/ui/dialog"
+import { DialogClose } from '@radix-ui/react-dialog'
+
 
 type Question = {
     questionText: string
@@ -118,7 +130,7 @@ export default function Quiz({ title }: { title?: string }) {
                 </CardContent>
                 <CardFooter className="flex justify-between">
                     <Button onClick={resetQuiz}>Retake Quiz</Button>
-                    <Button asChild>
+                    <Button variant={'destructive'} asChild>
                         <Link href="/">Exit to Home</Link>
                     </Button>
                 </CardFooter>
@@ -186,10 +198,52 @@ export default function Quiz({ title }: { title?: string }) {
                     </Button>
                 </div>
                 <div className="flex space-x-2 w-full md:w-fit justify-between md:justify-start">
-                    <Button onClick={handleSubmit} variant="default">Submit Test</Button>
-                    <Button asChild variant="outline">
-                        <Link href="/">Exit Test</Link>
-                    </Button>
+                    <Dialog>
+                        <DialogTrigger><Button>Submit Test</Button></DialogTrigger>
+                        <DialogContent>
+                            <DialogHeader>
+                                <DialogTitle>Are you absolutely sure?</DialogTitle>
+                                <DialogDescription className='text-xl py-4'>
+                                    This action cannot be undone. And you will not be able to access the test again.
+                                </DialogDescription>
+                            </DialogHeader>
+                            <DialogFooter>
+                                <div className='flex items-center justify-between w-full'>
+                                    <DialogClose asChild>
+                                        <Button type="button" variant={'outline'}>
+                                            Close
+                                        </Button>
+                                    </DialogClose>
+                                    <Button onClick={handleSubmit} variant="default">Submit Test</Button>
+                                </div>
+
+                            </DialogFooter>
+                        </DialogContent>
+                    </Dialog>
+                    <Dialog>
+                        <DialogTrigger><Button variant={'destructive'}>Exit Test</Button></DialogTrigger>
+                        <DialogContent>
+                            <DialogHeader>
+                                <DialogTitle>Are you absolutely sure?</DialogTitle>
+                                <DialogDescription className='text-xl py-4'>
+                                    This action cannot be undone. All your current pogress will be lost.
+                                </DialogDescription>
+                            </DialogHeader>
+                            <DialogFooter>
+                                <div className='flex items-center justify-between w-full'>
+                                    <DialogClose asChild>
+                                        <Button type="button">
+                                            Close
+                                        </Button>
+                                    </DialogClose>
+                                    <Button variant={'destructive'} >
+                                        <Link href={"/"}>Exit Test</Link>
+                                    </Button>
+                                </div>
+
+                            </DialogFooter>
+                        </DialogContent>
+                    </Dialog>
                 </div>
             </CardFooter>
         </Card>
