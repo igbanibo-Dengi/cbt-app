@@ -50,7 +50,7 @@ export function Homepage() {
                     <CardDescription>{course.description}</CardDescription>
                   </CardHeader>
                   <CardContent>
-                    <Button variant="outline" className="w-full" asChild>
+                    <Button className="w-full" asChild>
                       <Link href={course.href}>Take Test</Link>
                     </Button>
                   </CardContent>

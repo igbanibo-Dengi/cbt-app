@@ -147,7 +147,7 @@ export default function Quiz({ title }: { title?: string }) {
                 >
                     {questions[currentQuestionIndex]?.options.map((option, index) => (
                         <div key={option} className="flex items-center space-x-2 mb-2">
-                            <RadioGroupItem value={option} id={`option-${index}`} disabled={answers[currentQuestionIndex] !== undefined} />
+                            <RadioGroupItem value={option} id={`option-${index}`} disabled={answers[currentQuestionIndex] !== undefined} className='size-4' />
                             <Label htmlFor={`option-${index}`} className="flex-grow p-2 rounded-md hover:bg-gray-100">
                                 {option}
                             </Label>
