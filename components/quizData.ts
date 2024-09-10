@@ -1303,8 +1303,6 @@ export const initialQuestions: Question[] = [
         ],
         correctAnswer: "existing information"
     },
-    // correctAnswer: "Assigning resources to changes"
-    // },
     {
         questionText: "Which dimension of service management considers the workflows and controls needed to deliver services?",
         options: [
@@ -1935,6 +1933,842 @@ export const initialQuestions: Question[] = [
         ],
         correctAnswer: "requirements"
     },
+    {
+        questionText: "Which of the following ensures that a service provider and a service consumer continually co-create value?",
+        options: [
+            "Service consumption",
+            "Service offerings",
+            "Service level management",
+            "Service relationship management"
+        ],
+        correctAnswer: "Service relationship management"
+    },
+    {
+        questionText: "What type of change is often used for resolving incidents or implementing security patches?",
+        options: [
+            "Standard change",
+            "Normal change",
+            "Emergency change",
+            "Change model"
+        ],
+        correctAnswer: "Standard change"
+    },
+    {
+        questionText: "Which phase of problem management includes the regular re-assessment of the effectiveness of workarounds?",
+        options: [
+            "Problem identification",
+            "Problem control",
+            "Error control",
+            "Problem analysis"
+        ],
+        correctAnswer: "Error control"
+    },
+    {
+        questionText: "Which service value chain activity deals with the purchase of new products?",
+        options: [
+            "Engage",
+            "Obtain/build",
+            "Plan",
+            "Improve"
+        ],
+        correctAnswer: "Obtain/build"
+    },
+    {
+        questionText: "Which is the BEST type of resource for investigating complex incidents?",
+        options: [
+            "Self-help systems",
+            "Knowledgeable support staff",
+            "Detailed work instructions",
+            "Disaster recovery plans"
+        ],
+        correctAnswer: "Knowledgeable support staff"
+    },
+    {
+        questionText: "Which dimension of service management includes consideration of the type of relationship required with other organizations involved in the design and delivery of services?",
+        options: [
+            "Organizations and people",
+            "Information and technology",
+            "Partners and suppliers",
+            "Value streams and processes"
+        ],
+        correctAnswer: "Partners and suppliers"
+    },
+    {
+        questionText: "What is defined as 'the role that uses services'?",
+        options: [
+            "Service consumer",
+            "Customer",
+            "User",
+            "Sponsor"
+        ],
+        correctAnswer: "User"
+    },
+    {
+        questionText: "Which is an example of a problem control activity?",
+        options: [
+            "Reviewing incident records to identify trends",
+            "Implementing a technical fix to resolve an issue",
+            "Re-assessing a known error to understand the ongoing impact",
+            "Documenting the steps in a workaround"
+        ],
+        correctAnswer: "Re-assessing a known error to understand the ongoing impact"
+    },
+    {
+        questionText: "What should remain constant within an organization, even when the organization's objectives change?",
+        options: [
+            "Outputs",
+            "Guiding principles",
+            "Service offerings",
+            "Outcomes"
+        ],
+        correctAnswer: "Guiding principles"
+    },
+    {
+        questionText: "Which is a key element of the 'think and work holistically' guiding principle?",
+        options: [
+            "Assessing which procedures can be re-used when improving a service",
+            "Understanding the methods applicable to complex systems",
+            "Eliminating metrics which do not contribute to achieving an objective",
+            "Using technology for standard tasks to give people time for complex activities"
+        ],
+        correctAnswer: "Understanding the methods applicable to complex systems"
+    },
+    {
+        questionText: "Which practice has a purpose that includes managing authentication and non-repudiation?",
+        options: [
+            "Information security management",
+            "Supplier management",
+            "Service configuration management",
+            "Relationship management"
+        ],
+        correctAnswer: "Information security management"
+    },
+    {
+        questionText: "Which of the following is the MOST important for effective incident management?",
+        options: [
+            "Collaboration tools and techniques",
+            "Balanced scorecard review",
+            "Automated pipelines",
+            "A variety of access channels"
+        ],
+        correctAnswer: "Collaboration tools and techniques"
+    },
+    {
+        questionText: "Which is the MOST important stakeholder group that a service provider needs to collaborate with?",
+        options: [
+            "Suppliers",
+            "Customers",
+            "Relationship managers",
+            "Developers"
+        ],
+        correctAnswer: "Customers"
+    },
+    {
+        questionText: "For which purpose would the continual improvement practice use a SWOT analysis?",
+        options: [
+            "Understanding the current state",
+            "Defining the future desired state",
+            "Tracking and managing ideas",
+            "Ensuring everyone actively participates"
+        ],
+        correctAnswer: "Understanding the current state"
+    },
+    {
+        questionText: "Which is CORRECT about change authorization?",
+        options: [
+            "A change authority is assigned each time a standard change is requested",
+            "Emergency changes are authorized by the technician making the change",
+            "Assignment of the change authority is based on the change type and model",
+            "The change authority will ensure changes are authorized after they are deployed"
+        ],
+        correctAnswer: "Assignment of the change authority is based on the change type and model"
+    },
+    {
+        questionText: "Which practice ensures that a variety of access channels are available for users to report issues?",
+        options: [
+            "Service desk",
+            "Service level management",
+            "Incident management",
+            "Change enablement"
+        ],
+        correctAnswer: "Service desk"
+    },
+    {
+        questionText: "The purpose of the problem management practice is to reduce the likelihood and impact of incidents by identifying actual and potential causes of incidents, and managing workarounds and [?].",
+        options: [
+            "events",
+            "changes",
+            "IT assets",
+            "known errors"
+        ],
+        correctAnswer: "known errors"
+    },
+    {
+        questionText: "Which is a key requirement for a successful service level agreements (SLAs)?",
+        options: [
+            "They should be written using language and terms which all parties will understand",
+            "They should be based on system-based metrics which are useful to the service provider",
+            "They should be carried forward, unchanged, from one year to the next to enable consistent service",
+            "They should avoid ambiguous targets such as those relating to user experience"
+        ],
+        correctAnswer: "They should be written using language and terms which all parties will understand"
+    },
+    {
+        questionText: "Which is an example of a service request?",
+        options: [
+            "A request for normal operation to be restored",
+            "A request to implement a security patch",
+            "A request for access to a file",
+            "A request to investigate the cause of an incident"
+        ],
+        correctAnswer: "A request for access to a file"
+    },
+    {
+        questionText: "Which of the four dimensions focuses on managing data in compliance with industry regulations?",
+        options: [
+            "Partners and suppliers",
+            "Organizations and people",
+            "Value streams and processes",
+            "Information and technology"
+        ],
+        correctAnswer: "Information and technology"
+    },
+    {
+        questionText: "When using the ITIL continual improvement model, which information should be produced by an organization in order to understand where the organization is now?",
+        options: [
+            "Business objectives",
+            "Improvement plans",
+            "Assessment results",
+            "KPI reports"
+        ],
+        correctAnswer: "Assessment results"
+    },
+    {
+        questionText: "Which guiding principle leads to a faster response to customer needs by timeboxing activities and learning from the outputs of previous activities?",
+        options: [
+            "Focus on value",
+            "Progress iteratively with feedback",
+            "Collaborate and promote visibility",
+            "Optimize and automate"
+        ],
+        correctAnswer: "Progress iteratively with feedback"
+    },
+    {
+        questionText: "Which practice has a purpose that includes maximizing the number of successful additions, modifications, or removals of anything that could have an effect on a service?",
+        options: [
+            "Service request management",
+            "Incident management",
+            "Service desk",
+            "Change enablement"
+        ],
+        correctAnswer: "Change enablement"
+    },
+    {
+        questionText: "In which situation will incident management USUALLY use a separate process?",
+        options: [
+            "Where no target resolution time exists",
+            "For low impact incidents",
+            "Where the cause must be diagnosed",
+            "For information security incidents"
+        ],
+        correctAnswer: "For information security incidents"
+    },
+    {
+        questionText: "Which practice minimizes the impact on normal service operation by managing resources in response to unplanned reductions in service quality?",
+        options: [
+            "Incident management",
+            "Change enablement",
+            "Service level management",
+            "Continual improvement"
+        ],
+        correctAnswer: "Incident management"
+    },
+    {
+        questionText: "Which practice makes use of methods from Lean, Agile and DevOps?",
+        options: [
+            "Service desk",
+            "Continual improvement",
+            "Problem management",
+            "Incident management"
+        ],
+        correctAnswer: "Continual improvement"
+    },
+    {
+        questionText: "Identify the missing word in the following sentence: Sponsor is the role that authorizes budget for service [?].",
+        options: [
+            "value",
+            "consumption",
+            "management",
+            "provision"
+        ],
+        correctAnswer: "consumption"
+    },
+    {
+        questionText: "Which statement about service offerings is CORRECT?",
+        options: [
+            "The same product can be used as a basis for more than one service offering",
+            "Service offerings include the transfer of goods from the consumer to the provider",
+            "Service offerings describe how providers and consumers cooperate to co-create value",
+            "Each service should be described to consumers as a single service offering"
+        ],
+        correctAnswer: "The same product can be used as a basis for more than one service offering"
+    },
+    {
+        questionText: "Which can a change schedule be used for?",
+        options: [
+            "Speeding up the planning and authorization of emergency changes",
+            "Providing information about deployed changes to help manage incidents and problems",
+            "Providing a means of initiating and assessing normal changes",
+            "Tracking and managing improvement ideas from identification through to final action"
+        ],
+        correctAnswer: "Providing information about deployed changes to help manage incidents and problems"
+    },
+    {
+        questionText: "Which is part of the value proposition of a service?",
+        options: [
+            "Costs removed from the consumer by the service",
+            "Costs imposed on the consumer by the service",
+            "Outputs of the service received by the consumer",
+            "Risks imposed on the consumer by the service"
+        ],
+        correctAnswer: "Costs removed from the consumer by the service"
+    },
+    {
+        questionText: "Why should a service level manager carry out regular service reviews?",
+        options: [
+            "To ensure that agreements are written simply and are easy to understand",
+            "To collect information about service consumer goals and objectives",
+            "To capture information about service issues and performance against agreed goals",
+            "To ensure continual improvement of services, so that they meet the evolving needs of service consumers"
+        ],
+        correctAnswer: "To capture information about service issues and performance against agreed goals"
+    },
+    {
+        questionText: "A flaw in an application could cause a service to fail. IT staff are actively analyzing the application to try and understand what is going on. What is the correct name for this type of flaw?",
+        options: [
+            "Problem",
+            "Incident",
+            "Event",
+            "Known error"
+        ],
+        correctAnswer: "Problem"
+    },
+    {
+        questionText: "Which value chain activity ensures that ongoing service activity meets user expectations?",
+        options: [
+            "Plan",
+            "Engage",
+            "Obtain/build",
+            "Deliver and support"
+        ],
+        correctAnswer: "Deliver and support"
+    },
+    {
+        questionText: "Which practice's purpose includes creating closer, more collaborative relationships?",
+        options: [
+            "Supplier management",
+            "Information security management",
+            "Release management",
+            "Service configuration management"
+        ],
+        correctAnswer: "Supplier management"
+    },
+    {
+        questionText: "Which practice is MOST LIKELY to make use of artificial intelligence, robotic process automation, and chatbots?",
+        options: [
+            "Service desk",
+            "Continual improvement",
+            "Problem management",
+            "Incident management"
+        ],
+        correctAnswer: "Service desk"
+    },
+    {
+        questionText: "What is a problem that has been analyzed but has not been resolved?",
+        options: [
+            "Workaround",
+            "Incident",
+            "Known error",
+            "Risk"
+        ],
+        correctAnswer: "Known error"
+    },
+    {
+        questionText: "Which is described by the 'organizations and people' dimension of service management?",
+        options: [
+            "Workflows and controls",
+            "Communication and collaboration",
+            "Inputs and outputs",
+            "Contracts and agreements"
+        ],
+        correctAnswer: "Communication and collaboration",
+    },
+    {
+        questionText: "Which facilitates outcomes that customers want to achieve?",
+        options: [
+            "Service",
+            "Warranty",
+            "Organization",
+            "IT asset"
+        ],
+        correctAnswer: "Service"
+    },
+    {
+        questionText: "Which practice recommends that organizations develop competencies in techniques such as strength, weakness, opportunity, and threat (SWOT) analysis, and balanced scorecards?",
+        options: [
+            "Incident management",
+            "Continual improvement",
+            "Service request management",
+            "Change enablement"
+        ],
+        correctAnswer: "Continual improvement"
+    },
+    {
+        questionText: "Which ITIL concept helps an organization to make good decisions?",
+        options: [
+            "Four dimensions of service management",
+            "Guiding principles",
+            "Service value chain",
+            "Practices"
+        ],
+        correctAnswer: "Guiding principles"
+    },
+    {
+        questionText: "Which is a recommendation applying the guiding principle 'keep it simple and practical'?",
+        options: [
+            "Communicate in a way the audience can hear",
+            "Sometimes nothing from the current state can be re-used",
+            "If a practice is easier to follow it is more likely to be adopted",
+            "Fast does not mean incomplete"
+        ],
+        correctAnswer: "If a practice is easier to follow it is more likely to be adopted"
+    },
+    {
+        questionText: "Which practice has a purpose that includes responding to conditions that could lead to potential faults or incidents?",
+        options: [
+            "Incident management",
+            "Service request management",
+            "Monitoring and event management",
+            "Change enablement"
+        ],
+        correctAnswer: "Monitoring and event management"
+    },
+    {
+        questionText: "What role would be MOST suitable for a new graduate with great levels of empathy and understanding of business issues?",
+        options: [
+            "Service level manager",
+            "Service desk agent",
+            "Change authority",
+            "Problem analyst"
+        ],
+        correctAnswer: "Service desk agent"
+    },
+    {
+        questionText: "Which is a way of applying the guiding principle 'focus on value'?",
+        options: [
+            "Understanding how service consumers use services",
+            "Comprehending the whole, but doing something",
+            "Recognizing the complexity of systems",
+            "Doing fewer things, but doing them better"
+        ],
+        correctAnswer: "Understanding how service consumers use services"
+    },
+    {
+        questionText: "Which of the following is NOT recommended by the guiding principle 'start where you are'?",
+        options: [
+            "Asking questions that appear to be stupid",
+            "Identifying what is available to be leveraged",
+            "Building something completely new",
+            "Collecting data directly from the source"
+        ],
+        correctAnswer: "Building something completely new"
+    },
+    {
+        questionText: "Which is a use of a continual improvement register?",
+        options: [
+            "Planning changes, assisting in communication, avoiding conflicts, and assigning resources",
+            "Selecting the right method, model or technique for identifying improvements",
+            "Tracking and managing improvement ideas from identification through to final action",
+            "Describing the services designed to meet the needs of a consumer group"
+        ],
+        correctAnswer: "Tracking and managing improvement ideas from identification through to final action"
+    },
+    {
+        questionText: "Which practice uses pre-defined, standardized procedures to enable fulfilment times to be clearly communicated?",
+        options: [
+            "Incident management",
+            "Service level management",
+            "Problem management",
+            "Service request management"
+        ],
+        correctAnswer: "Service request management"
+    },
+    {
+        questionText: "How can a service consumer contribute to the reduction of risk?",
+        options: [
+            "By providing the service in accordance with requirements",
+            "By ensuring that the service provider's resources are correctly configured",
+            "By fully understanding their own requirements for the service",
+            "By managing the detailed level of risk on behalf of the service provider"
+        ],
+        correctAnswer: "By fully understanding their own requirements for the service"
+    },
+    {
+        questionText: "In which case would a problem be logged as part of the problem identification?",
+        options: [
+            "When the cause is identified but not resolved",
+            "After receiving of error information from a supplier",
+            "When a user reports an unplanned service interruption",
+            "After a workaround is identified and documented"
+        ],
+        correctAnswer: "After receiving of error information from a supplier"
+    },
+    {
+        questionText: "In which case would a problem be logged as part of the problem identification?",
+        options: [
+            "When the cause is identified but not resolved",
+            "After receiving of error information from a supplier",
+            "When a user reports an unplanned service interruption",
+            "After a workaround is identified and documented"
+        ],
+        correctAnswer: "After receiving of error information from a supplier"
+    },
+    {
+        questionText: "Which practice helps to ensure that the services delivered to customers are aligned with their needs?",
+        options: [
+            "Service level management",
+            "Change enablement",
+            "Problem management",
+            "Service request management"
+        ],
+        correctAnswer: "Service request management"
+    },
+    {
+        questionText: "Which service request management decisions require that policies are established?",
+        options: [
+            "Deciding how degradations of service are resolved",
+            "Deciding how to handle service requests where the steps are unknown",
+            "Deciding which service requests require approval",
+            "Deciding when workarounds should be used"
+        ],
+        correctAnswer: "Deciding which service requests require approval"
+    },
+    {
+        questionText: "Which dimension of service management considers how activities are coordinated?",
+        options: [
+            "Organizations and people",
+            "Information and technology",
+            "Partners and suppliers",
+            "Value streams and processes"
+        ],
+        correctAnswer: "Value streams and processes"
+    },
+    {
+        questionText: "A user contacts the service desk to ask how they can create a report. Which practice is MOST LIKELY to contribute to resolving this issue?",
+        options: [
+            "Incident management",
+            "Service level management",
+            "Service request management",
+            "Change enablement"
+        ],
+        correctAnswer: "Service request management"
+    },
+    {
+        questionText: "What is the customer of a service responsible for?",
+        options: [
+            "Defining the requirements for the service",
+            "Provisioning the service",
+            "Using the service",
+            "Authorizing the budget for the service"
+        ],
+        correctAnswer: "Defining the requirements for the service"
+    },
+    {
+        questionText: "Which statement about value streams is CORRECT?",
+        options: [
+            "Each value stream must include all six value chain activities",
+            "Each value stream must include suppliers or partners",
+            "Each value stream must be designed for a specific scenario",
+            "Each value stream must include all 34 ITIL practices"
+        ],
+        correctAnswer: "Each value stream must be designed for a specific scenario"
+    },
+    {
+        questionText: "Which guiding principle recommends using ideas from ITIL, Lean, DevOps, Kanban, and other sources to help drive improvements?",
+        options: [
+            "Optimize and automate",
+            "Think and work holistically",
+            "Start where you are",
+            "Focus on value"
+        ],
+        correctAnswer: "Optimize and automate"
+    },
+    {
+        questionText: "Which is an activity in the 'problem control' phase of problem management?",
+        options: [
+            "Re-assessing a known error to manage the ongoing impact",
+            "Implementing a technical fix to resolve an issue",
+            "Documenting the steps in a workaround",
+            "Reviewing incident records to identify trends"
+        ],
+        correctAnswer: "Documenting the steps in a workaround"
+    },
+    {
+        questionText: "When working on an improvement iteration, which concept helps to ensure that the iteration activities remain appropriate in changing circumstances?",
+        options: [
+            "Minimum viable product",
+            "Feedback loop",
+            "Analysis paralysis",
+            "Direct observation"
+        ],
+        correctAnswer: "Feedback loop"
+    },
+    {
+        questionText: "What is the definition of 'service management'?",
+        options: [
+            "A result for a stakeholder enabled by one or more outputs",
+            "A formal description of one or more services, designed to address the needs of a target consumer group",
+            "Joint activities performed by a service provider and a service consumer to ensure continual value co-creation",
+            "A set of specialized organizational capabilities for enabling value for customers in the form of services"
+        ],
+        correctAnswer: "A set of specialized organizational capabilities for enabling value for customers in the form of services"
+    },
+    {
+        questionText: "Which is a description of service provision?",
+        options: [
+            "A way to help create value by facilitating outcomes that service consumers need",
+            "Activities that an organization performs to deliver services",
+            "A formal description of one or more services, designed to address the needs of a service consumer",
+            "Cooperation between two organizations to ensure that a service delivers value"
+        ],
+        correctAnswer: "Activities that an organization performs to deliver services"
+    },
+    {
+        questionText: "Which is an input to the service value system?",
+        options: [
+            "A need from consumers for new or changed services.",
+            "The system of directing and controlling an organization",
+            "A model to help meet stakeholders' expectations",
+            "Recommendations to help an organization in all aspects of its work"
+        ],
+        correctAnswer: "A need from consumers for new or changed services."
+    },
+    {
+        questionText: "Which organization delivers outputs or outcomes of a service?",
+        options: [
+            "A service consumer delivers outcomes of the service",
+            "A service consumer delivers outputs of the service",
+            "A service provider delivers outcomes of the service",
+            "A service provider delivers outputs of the service"
+        ],
+        correctAnswer: "A service provider delivers outputs of the service"
+    },
+    {
+        questionText: "Which practice requires focus and effort to engage and listen to the requirements, issues, concerns, and daily needs of customers?",
+        options: [
+            "Service request management",
+            "Service desk",
+            "Supplier management",
+            "Service level management"
+        ],
+        correctAnswer: "Service level management"
+    },
+
+    {
+        questionText: "Which practice would be MOST involved in assessing the risk to services when a supplier modifies the contract they offer to the organization?",
+        options: [
+            "Service request management",
+            "Change enablement",
+            "Incident management",
+            "Service level management"
+        ],
+        correctAnswer: "Change enablement"
+    },
+
+    {
+        questionText: "Which BEST describes the focus of the 'think and work holistically' principle?",
+        options: [
+            "Breaking down large initiatives into smaller pieces of work",
+            "Integrating an organization's activities to deliver value",
+            "Eliminating unnecessary steps to deliver valuable outcomes",
+            "Considering the existing organizational assets before building something new"
+        ],
+        correctAnswer: "Integrating an organization's activities to deliver value"
+    },
+
+    {
+        questionText: "Identify the missing word in the following sentence. An organization which is undertaking an improvement initiative should [?] the existing methods and services when building for the future.",
+        options: [
+            "Discard",
+            "Improve",
+            "Consider",
+            "Re-use"
+        ],
+        correctAnswer: "Consider"
+    },
+    {
+        questionText: "Identify the missing word in the following sentence. An organization which is undertaking an improvement initiative should [?] the existing methods and services when building for the future.",
+        options: [
+            "Discard",
+            "Improve",
+            "Consider",
+            "Re-use"
+        ],
+        correctAnswer: "Improve"
+    },
+    {
+        questionText: "Which step of the 'continual management model' defines measurable targets?",
+        options: [
+            "Where do we want to be?",
+            "What is the vision?",
+            "How do we get there?",
+            "Where are we now?"
+        ],
+        correctAnswer: "Where do we want to be?"
+    },
+    {
+        questionText: "Why should a service level agreement include bundles of metrics?",
+        options: [
+            "To reduce the number of metrics that need to be measured and reported",
+            "To help focus on business outcomes, rather than operational results",
+            "To ensure that the service levels have been agreed with customers",
+            "To ensure that all services are included in the service reports"
+        ],
+        correctAnswer: "To help focus on business outcomes, rather than operational results"
+    },
+    {
+        questionText: "Which practice balances management of risk with maximizing throughput?",
+        options: [
+            "Problem management",
+            "Incident management",
+            "Continual improvement",
+            "Change enablement"
+        ],
+        correctAnswer: "Change enablement"
+    },
+    {
+        questionText: "How does the 'incident management' practice set user expectations?",
+        options: [
+            "By using collaboration tools to communicate effectively",
+            "By agreeing, and communicating target resolution times",
+            "By assigning resources to ensure that all incidents are resolved as quickly as possible",
+            "By automated matching of incidents to known errors"
+        ],
+        correctAnswer: "By agreeing, and communicating target resolution times"
+    },
+    {
+        questionText: "What is a user?",
+        options: [
+            "The role that defines the requirements for a service",
+            "The role that directs and controls an organization",
+            "The role that uses services",
+            "The role that authorizes budget for service consumption"
+        ],
+        correctAnswer: "The role that uses services"
+    },
+    {
+        questionText: "How do 'continual improvement registers' help to create value?",
+        options: [
+            "By making improvements visible",
+            "By monitoring achievement against service level targets",
+            "By assigning change authorities for change requests",
+            "By documenting all improvement ideas in a single place"
+        ],
+        correctAnswer: "By making improvements visible"
+    },
+
+    {
+        questionText: "Which statement about the inputs and outputs of the value chain activities is CORRECT?",
+        options: [
+            "Each value chain activity receives inputs and provides outputs",
+            "The organization's governance will determine the inputs and outputs of each value chain activity",
+            "Some value chain activities only have inputs, whereas others only have outputs",
+            "Inputs and outputs are fixed for each value chain activity"
+        ],
+        correctAnswer: "Each value chain activity receives inputs and provides outputs"
+    },
+    {
+        questionText: "What is the value of a service?",
+        options: [
+            "A tangible or intangible deliverable of the service",
+            "The amount of money that is created or saved for the service consumers by using the service",
+            "The benefits, usefulness, or importance of the service, as perceived by the stakeholders",
+            "A result for a stakeholder enabled by the outputs of the service"
+        ],
+        correctAnswer: "The benefits, usefulness, or importance of the service, as perceived by the stakeholders"
+    },
+    {
+        questionText: "Which is the MOST LIKELY way of resolving major incidents?",
+        options: [
+            "A support team following detailed procedures for investigating the incident",
+            "Users establishing a resolution using self-help",
+            "A temporary team working together to identify a resolution",
+            "The service desk identifying the cause and a resolution"
+        ],
+        correctAnswer: "A temporary team working together to identify a resolution"
+    },
+    {
+        questionText: "Which is the MOST LIKELY way of resolving major incidents?",
+        options: [
+            "A support team following detailed procedures for investigating the incident",
+            "Users establishing a resolution using self-help",
+            "A temporary team working together to identify a resolution",
+            "The service desk identifying the cause and a resolution"
+        ],
+        correctAnswer: "A temporary team working together to identify a resolution"
+    },
+    {
+        questionText: "What is included in the purpose of the 'IT asset management' practice?",
+        options: [
+            "Supporting decision-making about purchase, re-use, retirement, and disposal of assets",
+            "Providing information on how assets are configured and the relationships between them",
+            "Making new and changed assets available for use",
+            "Moving assets to live or other environments for testing or staging"
+        ],
+        correctAnswer: "Supporting decision-making about purchase, re-use, retirement, and disposal of assets"
+    },
+    {
+        questionText: "Which component is focused on the activities needed by an organization to help it co-create value?",
+        options: [
+            "Guiding principles",
+            "Service value chain",
+            "Continual improvement",
+            "Practices"
+        ],
+        correctAnswer: "Service value chain"
+    },
+
+    {
+        questionText: "Identify the missing word(s) in the following sentence.\nWhen an organization is assessing its current state, it should use [?] to obtain accurate measurements.",
+        options: [
+            "Reports",
+            "Assumptions",
+            "Source data",
+            "Risk management techniques"
+        ],
+        "correctAnswer": "Source data"
+    },
+    {
+        questionText: "How should a process design allow for exceptional situations?",
+        options: [
+            "Create rules to handle exceptions generally",
+            "Remove the option for process exceptions",
+            "Create an additional process for each exception",
+            "Include all exception steps in the main process"
+        ],
+        "correctAnswer": "Create rules to handle exceptions generally"
+    },
+    {
+        questionText: "What is the MOST LIKELY reason that incident management would need a temporary team to work together?",
+        options: [
+            "To escalate an incident to a supplier or partner",
+            "So customers and users are provided with timely updates",
+            "To resolve a complex or major incident",
+            "So users can resolve their own incidents with self-help"
+        ],
+        "correctAnswer": "To resolve a complex or major incident"
+    },
+
 ];
 
 

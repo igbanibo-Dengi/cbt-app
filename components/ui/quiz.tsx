@@ -45,6 +45,7 @@ export default function Quiz({ title }: { title?: string }) {
         return shuffled
     }
 
+
     useEffect(() => {
         const shuffledQuestions = shuffleArray(initialQuestions).slice(0, 40)
         setQuestions(shuffledQuestions)
@@ -210,9 +211,9 @@ export default function Quiz({ title }: { title?: string }) {
                             <DialogFooter>
                                 <div className='flex items-center justify-between w-full'>
                                     <DialogClose asChild>
-                                        <Button type="button" variant={'outline'}>
-                                            Close
-                                        </Button>
+                                        <div className='inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50  text-primary border hover:bg-muted cursor-pointer "h-10 px-4 py-2'>
+                                            Cancel
+                                        </div>
                                     </DialogClose>
                                     <Button onClick={handleSubmit} variant="default">Submit Test</Button>
                                 </div>
@@ -232,9 +233,9 @@ export default function Quiz({ title }: { title?: string }) {
                             <DialogFooter>
                                 <div className='flex items-center justify-between w-full'>
                                     <DialogClose asChild>
-                                        <Button type="button">
-                                            Close
-                                        </Button>
+                                        <div className='inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50  text-primary border hover:bg-muted cursor-pointer "h-10 px-4 py-2'>
+                                            Cancel
+                                        </div>
                                     </DialogClose>
                                     <Button variant={'destructive'} >
                                         <Link href={"/"}>Exit Test</Link>
