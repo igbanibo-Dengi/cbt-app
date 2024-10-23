@@ -8,9 +8,9 @@ import Link from "next/link"
 export function Homepage() {
   const courses = [
     { title: "ITIL-4", icon: PenTool, description: " ", href: "/itil-test" },
-    { title: "Science", icon: FlaskConical, description: "Physics, Chemistry, Biology", href: "/coming-soon" },
-    { title: "Computer Science", icon: Code, description: "Programming, Algorithms", href: "/coming-soon" },
-    { title: "Literature", icon: BookOpen, description: "English, World Literature, Poetry", href: "/coming-soon" },
+    { title: "Test-2", icon: PenTool, description: " ", href: "/test-2" },
+    { title: "Computer Science", icon: Code, description: " ", href: "/coming-soon" },
+    { title: "Literature", icon: BookOpen, description: " ", href: "/coming-soon" },
   ]
 
   return (
