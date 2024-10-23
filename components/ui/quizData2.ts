@@ -135,7 +135,7 @@ export const initialQuestions: Question[] = [
             "Cashback",
             "Cashout"
         ],
-        "correctAnswer": "Cash Advance"
+        "correctAnswer": "Charge Back"
     },
     {
         "questionText": "The Risk of pilfering and counterfeit currency is taken care of with the POS",
