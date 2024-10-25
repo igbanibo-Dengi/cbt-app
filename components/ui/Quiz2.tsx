@@ -8,7 +8,7 @@ import { Label } from "@/components/ui/label"
 import { AlertCircle, CheckCircle2, Menu } from "lucide-react"
 import { Drawer, DrawerContent, DrawerTrigger } from "@/components/ui/drawer"
 import { ScrollArea } from "@/components/ui/scroll-area"
-import { initialQuestions } from './quizData2-new'
+import { initialQuestions } from './quizData-new1'
 
 type Question = {
     questionText: string
