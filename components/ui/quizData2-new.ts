@@ -52,12 +52,12 @@ export const initialQuestions: Question[] = [
     {
         "questionText": "Which of these statements about the POS is true",
         "options": [
-            "POS is sold only to account holders.",
-            "POS is sold to both Account Holders and Non-Account Holders; Non account holders are expected to open accounts thereafter.",
-            "Non-Account Holders cannot use a POS machine.",
-            "Only banks can issue POS machines to Account Holders."
+            "POS is sold only to account holders",
+            "POS is sold to both Account Holders and Non-Account Holders; Non account holders are expected to open accounts thereafter",
+            "Non-Account Holders cannot use a POS machine",
+            "Only banks can issue POS machines to Account Holders"
         ],
-        "correctAnswer": "POS is sold to both Account Holders and Non-Account Holders; Non account holders are expected to open accounts thereafter."
+        "correctAnswer": "POS is sold to both Account Holders and Non-Account Holders; Non account holders are expected to open accounts thereafter"
     },
     {
         "questionText": "Access Bank sells a POS machine to a customer that signifies interest on the product at a very affordable rate",
@@ -97,7 +97,7 @@ export const initialQuestions: Question[] = [
             "True",
             "False"
         ],
-        "correctAnswer": "True"
+        "correctAnswer": "False"
     },
     {
         "questionText": "The POS terminal effectively reads cardholders information on the chip and pin/ magnetic stripe cards",
@@ -121,11 +121,11 @@ export const initialQuestions: Question[] = [
         "questionText": "Audit trail as a major benefit of POS transactions means that:",
         "options": [
             "It ensures that all POS transactions are instantly processe",
-            "It helps Vendors reconcile and track transactions anytime.",
-            "It prevents all unauthorized transactions from occurring.",
-            "It reduces the transaction fees charged by banks."
+            "It helps Vendors reconcile and track transactions anytime",
+            "It prevents all unauthorized transactions from occurring",
+            "It reduces the transaction fees charged by banks"
         ],
-        "correctAnswer": "It helps Vendors reconcile and track transactions anytime."
+        "correctAnswer": "It helps Vendors reconcile and track transactions anytime"
     },
     {
         "questionText": "The transaction which gives the individual cash at the POS terminal is called:",
@@ -220,12 +220,12 @@ export const initialQuestions: Question[] = [
     {
         "questionText": "Which of the following is true of Accessonline?",
         "options": [
-            "Individual customers are charged yearly for using Accessonline.",
-            "Accessonline is only available for corporate customers.",
-            "Individual customers pay a little sum every month for the use of Accessonline.",
-            "Accessonline transactions are processed manually by bank staff."
+            "Individual customers are charged yearly for using Accessonline",
+            "Accessonline is only available for corporate customers",
+            "Individual customers pay a little sum every month for the use of Accessonline",
+            "Accessonline transactions are processed manually by bank staff"
         ],
-        "correctAnswer": "Individual customers pay a little sum every month for the use of Accessonline."
+        "correctAnswer": "Individual customers pay a little sum every month for the use of Accessonline"
     },
     {
         "questionText": "Another name for DAUE could be Local Negotiable Instrument Credit Program",
@@ -253,12 +253,12 @@ export const initialQuestions: Question[] = [
     {
         "questionText": "For value to be given to a customer under DAUE, the beneficiary must have an instrument which:",
         "options": [
-            "Has been issued within the last 30 days.",
-            "Has already been sent for clearing or collection.",
-            "Is guaranteed by the issuing bank.",
-            "Is a digital currency transaction."
+            "Has been issued within the last 30 days",
+            "Has already been sent for clearing or collection",
+            "Is guaranteed by the issuing bank",
+            "Is a digital currency transaction"
         ],
-        "correctAnswer": "Has already been sent for clearing or collection."
+        "correctAnswer": "Has already been sent for clearing or collection"
     },
     {
         "questionText": "What value of instruments in clearing can be availed to the customer under DAUE?",
@@ -268,7 +268,7 @@ export const initialQuestions: Question[] = [
             "90% of the amount on the draft",
             "100% of the amount on the draft"
         ],
-        "correctAnswer": "90% of the amount on the draft."
+        "correctAnswer": "90% of the amount on the draft"
     },
     {
         "questionText": "What value of a cheque in clearing can get value under DAUE?",
@@ -278,10 +278,10 @@ export const initialQuestions: Question[] = [
             "100% of the amount on the cheque",
             "90% of the amount on the cheque"
         ],
-        "correctAnswer": "80% of the amount on the cheque."
+        "correctAnswer": "80% of the amount on the cheque"
     },
     {
-        "questionText": "Transactions on DAUE can only take place in the bank’s head office.",
+        "questionText": "Transactions on DAUE can only take place in the bank’s head office",
         "options": [
             "True",
             "False"
@@ -289,7 +289,7 @@ export const initialQuestions: Question[] = [
         "correctAnswer": "False"
     },
     {
-        "questionText": "Customer can request for any amount on DAUE, if the account has credit up to that amount.",
+        "questionText": "Customer can request for any amount on DAUE, if the account has credit up to that amount",
         "options": [
             "True",
             "False"
@@ -312,10 +312,10 @@ export const initialQuestions: Question[] = [
             "Selected Principals",
             "Non-profit organizations"
         ],
-        "correctAnswer": "Selected Principals."
+        "correctAnswer": "Selected Principals"
     },
     {
-        "questionText": "The Principal whose invoice is discounted under the invoice discounting program must be an Account Holder in Access Bank.",
+        "questionText": "The Principal whose invoice is discounted under the invoice discounting program must be an Account Holder in Access Bank",
         "options": [
             "True",
             "False"
@@ -323,15 +323,15 @@ export const initialQuestions: Question[] = [
         "correctAnswer": "False"
     },
     {
-        "questionText": "Before the request for funds under Invoice discounting is granted it must be confirmed that the principal is in the approved list of principals.",
+        "questionText": "Before the request for funds under Invoice discounting is granted it must be confirmed that the principal is in the approved list of principals",
         "options": [
             "True",
             "False"
         ],
-        "correctAnswer": "True."
+        "correctAnswer": "True"
     },
     {
-        "questionText": "Any vendor can get value under Invoice discounting program.",
+        "questionText": "Any vendor can get value under Invoice discounting program",
         "options": [
             "True",
             "False"
@@ -346,7 +346,7 @@ export const initialQuestions: Question[] = [
             "To allow businesses to extend their payment deadlines",
             "To ensure all invoices are paid in advance"
         ],
-        "correctAnswer": "To provide liquidity to customers during the period between performance of contract and receipt of cash."
+        "correctAnswer": "To provide liquidity to customers during the period between performance of contract and receipt of cash"
     },
 
     {
@@ -357,7 +357,7 @@ export const initialQuestions: Question[] = [
             "30 - 90 days",
             "10 - 30 days"
         ],
-        "correctAnswer": "30 - 90 days."
+        "correctAnswer": "30 - 90 days"
     },
     {
         "questionText": "How many years would a vendor be in business before he can be granted finance under Invoice Discounting?",
@@ -367,7 +367,7 @@ export const initialQuestions: Question[] = [
             "7 years",
             "5 years"
         ],
-        "correctAnswer": "5 years."
+        "correctAnswer": "5 years"
     },
     {
         "questionText": "What is the minimum acceptable annual turnover of a vendor who can get finance under the Invoice discounting program?",
@@ -377,10 +377,10 @@ export const initialQuestions: Question[] = [
             "300 million naira",
             "100 million naira"
         ],
-        "correctAnswer": "300 million nair"
+        "correctAnswer": "300 million naira"
     },
     {
-        "questionText": "The vendor under Invoice discounting program must have at least 2 years credit relationship with Access Bank.",
+        "questionText": "The vendor under Invoice discounting program must have at least 2 years credit relationship with Access Bank",
         "options": [
             "True",
             "False"
@@ -388,15 +388,15 @@ export const initialQuestions: Question[] = [
         "correctAnswer": "False"
     },
     {
-        "questionText": "In an Invoice discounting relationship, customer’s cash flow is improved for business growth.",
+        "questionText": "In an Invoice discounting relationship, customer’s cash flow is improved for business growth",
         "options": [
             "True",
             "False"
         ],
-        "correctAnswer": "True."
+        "correctAnswer": "True"
     },
     {
-        "questionText": "KYC is not a major part of documentation prior to Invoice discounting credit program.",
+        "questionText": "KYC is not a major part of documentation prior to Invoice discounting credit program",
         "options": [
             "True",
             "False"
@@ -404,15 +404,15 @@ export const initialQuestions: Question[] = [
         "correctAnswer": "False"
     },
     {
-        "questionText": "In an Invoice discounting transaction, there is a dedicated ID account for the supplier/vendor.",
+        "questionText": "In an Invoice discounting transaction, there is a dedicated ID account for the supplier/vendor",
         "options": [
             "True",
             "False"
         ],
-        "correctAnswer": "True."
+        "correctAnswer": "True"
     },
     {
-        "questionText": "The main purpose of this program is to grant credit facilities to customers who we expect to have large deposits with the bank in future.",
+        "questionText": "The main purpose of this program is to grant credit facilities to customers who we expect to have large deposits with the bank in future",
         "options": [
             "True",
             "False"
@@ -420,7 +420,7 @@ export const initialQuestions: Question[] = [
         "correctAnswer": "False"
     },
     {
-        "questionText": "The main purpose of this program is to grant credit facilities to major customers of the bank.",
+        "questionText": "The main purpose of this program is to grant credit facilities to major customers of the bank",
         "options": [
             "True",
             "False"
@@ -428,7 +428,7 @@ export const initialQuestions: Question[] = [
         "correctAnswer": "False"
     },
     {
-        "questionText": "Collateral currency must be in local currency only.",
+        "questionText": "Collateral currency must be in local currency only",
         "options": [
             "True",
             "False"
@@ -436,12 +436,12 @@ export const initialQuestions: Question[] = [
         "correctAnswer": "False"
     },
     {
-        "questionText": "Collateral currency could be any convertible currency.",
+        "questionText": "Collateral currency could be any convertible currency",
         "options": [
             "True",
             "False"
         ],
-        "correctAnswer": "True."
+        "correctAnswer": "True"
     },
     {
         "questionText": "What is the maximum tenor of the facility granted under cash collateralized lending?",
@@ -451,7 +451,7 @@ export const initialQuestions: Question[] = [
             "5 years",
             "10 years"
         ],
-        "correctAnswer": "5 years."
+        "correctAnswer": "5 years"
     },
     {
         "questionText": "What value of the facility amount can be accepted as adequate collateral?",
@@ -461,37 +461,37 @@ export const initialQuestions: Question[] = [
             "25% cash or cash equivalents",
             "100% cash or cash equivalents"
         ],
-        "correctAnswer": "100% cash or cash equivalents."
+        "correctAnswer": "100% cash or cash equivalents"
     },
     {
         "questionText": "What happens when collateral is in a currency other than the obligation currency?",
         "options": [
-            "We can grant 50% of currency value as facility.",
-            "We can grant 100% of currency value as facility.",
-            "We can grant 90% of currency value as facility.",
-            "We cannot grant any facility."
+            "We can grant 50% of currency value as facility",
+            "We can grant 100% of currency value as facility",
+            "We can grant 90% of currency value as facility",
+            "We cannot grant any facility"
         ],
-        "correctAnswer": "We can grant 90% of currency value as facility."
+        "correctAnswer": "We can grant 90% of currency value as facility"
     },
     {
         "questionText": "One major risk that the Bank must look out for in this type of transaction is:",
         "options": [
-            "Customer uses laundered money as collateral.",
-            "The customer has no credit history.",
+            "Customer uses laundered money as collateral",
+            "The customer has no credit history",
             "The collateral is not properly value",
-            "The transaction is not properly documente"
+            "The transaction is not properly documented"
         ],
-        "correctAnswer": "Customer uses laundered money as collateral."
+        "correctAnswer": "Customer uses laundered money as collateral"
     },
     {
         "questionText": "The major mitigant to be applied to risks identified with the cash collateralized lending program is:",
         "options": [
-            "Robust KYC and customer profiling undertaken prior to completing the transaction.",
-            "Setting lower facility limits to reduce exposure.",
-            "Regular audits of collateral accounts.",
-            "Close monitoring of market fluctuations affecting collateral value."
+            "Robust KYC and customer profiling undertaken prior to completing the transaction",
+            "Setting lower facility limits to reduce exposure",
+            "Regular audits of collateral accounts",
+            "Close monitoring of market fluctuations affecting collateral value"
         ],
-        "correctAnswer": "Robust KYC and customer profiling undertaken prior to completing the transaction."
+        "correctAnswer": "Robust KYC and customer profiling undertaken prior to completing the transaction"
     },
     {
         "questionText": "A customer may on his volition have access to his cash collateral while his facility is still running",
@@ -510,7 +510,7 @@ export const initialQuestions: Question[] = [
         "correctAnswer": "False"
     },
     {
-        "questionText": "It is possible for the customer to have access to his collateral account after his obligations with regards to the facility granted has been taken care of.",
+        "questionText": "It is possible for the customer to have access to his collateral account after his obligations with regards to the facility granted has been taken care of",
         "options": [
             "True",
             "False"
@@ -520,15 +520,15 @@ export const initialQuestions: Question[] = [
     {
         "questionText": "Which of these is true in respect of the spread on cash collateralized lending transactions?",
         "options": [
-            "Not less than 4% between deposit rate and facility rate.",
-            "It should be equal to the market interest rate.",
-            "It is capped at 2% regardless of market conditions.",
+            "Not less than 4% between deposit rate and facility rate",
+            "It should be equal to the market interest rate",
+            "It is capped at 2% regardless of market conditions",
             "It varies based on the type of collateral use"
         ],
-        "correctAnswer": "Not less than 4% between deposit rate and facility rate."
+        "correctAnswer": "Not less than 4% between deposit rate and facility rate"
     },
     {
-        "questionText": "Cash collateralized lending can only be initiated by Head office staff.",
+        "questionText": "Cash collateralized lending can only be initiated by Head office staff",
         "options": [
             "True",
             "False"
@@ -566,7 +566,7 @@ export const initialQuestions: Question[] = [
         "correctAnswer": "Organizing an Inter-School Sports competition"
     },
     {
-        "questionText": "Every school in Nigeria can apply to get facility under FUSS.",
+        "questionText": "Every school in Nigeria can apply to get facility under FUSS",
         "options": [
             " True",
             " False"
@@ -584,7 +584,7 @@ export const initialQuestions: Question[] = [
         "correctAnswer": "A short and medium-term finance"
     },
     {
-        "questionText": "The School that gets finance under FUSS may not have the need for which the fund is sought.",
+        "questionText": "The School that gets finance under FUSS may not have the need for which the fund is sought",
         "options": [
             " True",
             " False"
@@ -592,7 +592,7 @@ export const initialQuestions: Question[] = [
         "correctAnswer": "False"
     },
     {
-        "questionText": "The Bank under FUSS may finance Buses for students of the applicable school.",
+        "questionText": "The Bank under FUSS may finance Buses for students of the applicable school",
         "options": [
             " True",
             " False"
@@ -600,7 +600,7 @@ export const initialQuestions: Question[] = [
         "correctAnswer": "True"
     },
     {
-        "questionText": "Laboratory equipment are not qualified for financing under FUSS.",
+        "questionText": "Laboratory equipment are not qualified for financing under FUSS",
         "options": [
             " True",
             " False"
@@ -608,7 +608,7 @@ export const initialQuestions: Question[] = [
         "correctAnswer": "False"
     },
     {
-        "questionText": "School Furniture is not qualified for finance under FUSS.",
+        "questionText": "School Furniture is not qualified for finance under FUSS",
         "options": [
             " True",
             " False"
@@ -616,7 +616,7 @@ export const initialQuestions: Question[] = [
         "correctAnswer": "False"
     },
     {
-        "questionText": "Power generating sets are qualified for financing under FUSS.",
+        "questionText": "Power generating sets are qualified for financing under FUSS",
         "options": [
             " True",
             " False"
@@ -624,7 +624,7 @@ export const initialQuestions: Question[] = [
         "correctAnswer": "True"
     },
     {
-        "questionText": "Competitive rate is a major benefit of the FUSS program.",
+        "questionText": "Competitive rate is a major benefit of the FUSS program",
         "options": [
             " True",
             " False"
@@ -632,7 +632,7 @@ export const initialQuestions: Question[] = [
         "correctAnswer": "True"
     },
     {
-        "questionText": "Growth in liability of the Bank cannot be achieved with FUSS.",
+        "questionText": "Growth in liability of the Bank cannot be achieved with FUSS",
         "options": [
             " True",
             " False"
@@ -640,7 +640,7 @@ export const initialQuestions: Question[] = [
         "correctAnswer": "False"
     },
     {
-        "questionText": "Growth in quality asset base of the Bank cannot be achieved with FUSS.",
+        "questionText": "Growth in quality asset base of the Bank cannot be achieved with FUSS",
         "options": [
             " True",
             " False"
@@ -648,7 +648,7 @@ export const initialQuestions: Question[] = [
         "correctAnswer": "False"
     },
     {
-        "questionText": "FUSS credit program will be initiated in the head office alone.",
+        "questionText": "FUSS credit program will be initiated in the head office alone",
         "options": [
             " True",
             " False"
@@ -658,12 +658,12 @@ export const initialQuestions: Question[] = [
     {
         "questionText": "For facility on FUSS; can the branch initiate it?",
         "options": [
-            " Yes, every branch can.",
-            " No, only the head office can initiate it.",
-            " Yes, but only if the school has been in operation for over five years.",
-            " No, it must go through a special approval process."
+            " Yes, every branch can",
+            " No, only the head office can initiate it",
+            " Yes, but only if the school has been in operation for over five years",
+            " No, it must go through a special approval process"
         ],
-        "correctAnswer": "Yes, every branch can."
+        "correctAnswer": "Yes, every branch can"
     },
     {
         "questionText": "The major source of repayment of funds on FUSS is:",
@@ -676,7 +676,7 @@ export const initialQuestions: Question[] = [
         "correctAnswer": "School fees payment"
     },
     {
-        "questionText": "Treasury Bills are short term in nature.",
+        "questionText": "Treasury Bills are short term in nature",
         "options": [
             " True",
             " False"
@@ -717,23 +717,23 @@ export const initialQuestions: Question[] = [
     {
         "questionText": "Which of these statements about Treasury Bills is true?",
         "options": [
-            "Income is devoid of federal or state taxes.",
-            "They are only available to institutional investors.",
-            "They have a minimum investment period of five years.",
-            "Interest rates are fixed and cannot change."
+            "Income is devoid of federal or state taxes",
+            "They are only available to institutional investors",
+            "They have a minimum investment period of five years",
+            "Interest rates are fixed and cannot change"
         ],
-        "correctAnswer": "Income is devoid of federal or state taxes."
+        "correctAnswer": "Income is devoid of federal or state taxes"
     },
 
     {
         "questionText": "What does Access Bank gain by investing in Treasury Bills?",
         "options": [
-            "The Bank manages its funds effectively.",
-            "It can influence government policies directly.",
-            "The Bank avoids all risks associated with lending.",
-            "It loses liquidity and increases volatility."
+            "The Bank manages its funds effectively",
+            "It can influence government policies directly",
+            "The Bank avoids all risks associated with lending",
+            "It loses liquidity and increases volatility"
         ],
-        "correctAnswer": "The Bank manages its funds effectively."
+        "correctAnswer": "The Bank manages its funds effectively"
     },
     {
         "questionText": "How does the Bank gain margin on Treasury Bills?",
@@ -748,12 +748,12 @@ export const initialQuestions: Question[] = [
     {
         "questionText": "How does the government benefit from Treasury Bills?",
         "options": [
-            "It reduces the overall national debt.",
-            "The government receives fixed interest rates on all funds.",
-            "It eliminates the need for taxation altogether.",
-            "Government borrows to take care of pressing needs."
+            "It reduces the overall national debt",
+            "The government receives fixed interest rates on all funds",
+            "It eliminates the need for taxation altogether",
+            "Government borrows to take care of pressing needs"
         ],
-        "correctAnswer": "Government borrows to take care of pressing needs."
+        "correctAnswer": "Government borrows to take care of pressing needs"
     },
     {
         "questionText": "Is it possible for government to borrow from Individuals?",
@@ -764,7 +764,7 @@ export const initialQuestions: Question[] = [
         "correctAnswer": "True"
     },
     {
-        "questionText": "Government borrows only from overseas institutions whenever it has need for money.",
+        "questionText": "Government borrows only from overseas institutions whenever it has need for money",
         "options": [
             "True",
             "False"
@@ -772,7 +772,7 @@ export const initialQuestions: Question[] = [
         "correctAnswer": "False"
     },
     {
-        "questionText": "Money is pushed into the system whenever Treasury Bills are issued.",
+        "questionText": "Money is pushed into the system whenever Treasury Bills are issued",
         "options": [
             "True",
             "False"
@@ -780,7 +780,7 @@ export const initialQuestions: Question[] = [
         "correctAnswer": "False"
     },
     {
-        "questionText": "Inflation can be controlled through Treasury Bills issue.",
+        "questionText": "Inflation can be controlled through Treasury Bills issue",
         "options": [
             "True",
             "False"
@@ -818,7 +818,7 @@ export const initialQuestions: Question[] = [
         "correctAnswer": "Central Bank of Nigeria (CBN)"
     },
     {
-        "questionText": "Any Commercial bank that so wishes could issue Treasury Bills.",
+        "questionText": "Any Commercial bank that so wishes could issue Treasury Bills",
         "options": [
             "True",
             "False"
@@ -826,7 +826,7 @@ export const initialQuestions: Question[] = [
         "correctAnswer": "False"
     },
     {
-        "questionText": "The Banker`s Acceptance is drawn and accepted by the customers.",
+        "questionText": "The Banker`s Acceptance is drawn and accepted by the customers",
         "options": [
             "True",
             "False"
@@ -834,7 +834,7 @@ export const initialQuestions: Question[] = [
         "correctAnswer": "False"
     },
     {
-        "questionText": "Once accepted, the Banker`s Acceptance becomes a liability of the bank.",
+        "questionText": "Once accepted, the Banker`s Acceptance becomes a liability of the bank",
         "options": [
             "True",
             "False"
@@ -842,7 +842,7 @@ export const initialQuestions: Question[] = [
         "correctAnswer": "True"
     },
     {
-        "questionText": "By regulation, the bank must hold the accepted paper until maturity of the transaction.",
+        "questionText": "By regulation, the bank must hold the accepted paper until maturity of the transaction",
         "options": [
             "True",
             "False"
@@ -850,7 +850,7 @@ export const initialQuestions: Question[] = [
         "correctAnswer": "False"
     },
     {
-        "questionText": "ABC Limited invested N100 million in Treasury Bills on February 14, 2009. The maturity date is December 30, 2010.",
+        "questionText": "ABC Limited invested N100 million in Treasury Bills on February 14, 2009 The maturity date is December 30, 2010",
         "options": [
             "Yes, it is possible",
             "No, it is not possible"
@@ -860,15 +860,15 @@ export const initialQuestions: Question[] = [
     {
         "questionText": "Which of the following is true about Bills for Collection?",
         "options": [
-            "It's an instruction from the seller to his bank.",
-            "It's a type of loan provided by the bank.",
-            "It guarantees payment to the buyer.",
-            "It's an investment instrument issued by the government."
+            "It's an instruction from the seller to his bank",
+            "It's a type of loan provided by the bank",
+            "It guarantees payment to the buyer",
+            "It's an investment instrument issued by the government"
         ],
-        "correctAnswer": "It's an instruction from the seller to his bank."
+        "correctAnswer": "It's an instruction from the seller to his bank"
     },
     {
-        "questionText": "In a Bills for collection, the Bank cannot handover the document to purchaser if payment has not been made.",
+        "questionText": "In a Bills for collection, the Bank cannot handover the document to purchaser if payment has not been made",
         "options": [
             "True",
             "False"
@@ -876,7 +876,7 @@ export const initialQuestions: Question[] = [
         "correctAnswer": "False"
     },
     {
-        "questionText": "An Undertaking to pay is not permissible under the laws governing bills for collections.",
+        "questionText": "An Undertaking to pay is not permissible under the laws governing bills for collections",
         "options": [
             "True",
             "False"
@@ -894,7 +894,7 @@ export const initialQuestions: Question[] = [
         "correctAnswer": "Form M"
     },
     {
-        "questionText": "Going beyond the ordinary, a proactive Access bank staff could process Bills for collection for a customer when he can't find a Form M in a bills for collection transaction.",
+        "questionText": "Going beyond the ordinary, a proactive Access bank staff could process Bills for collection for a customer when he can't find a Form M in a bills for collection transaction",
         "options": [
             "True",
             "False"
@@ -902,7 +902,7 @@ export const initialQuestions: Question[] = [
         "correctAnswer": "False"
     },
     {
-        "questionText": "In some cases, approval of the Bank may not be needed before Form M is dispatched to pre-shipment inspection agents in a bills for collection.",
+        "questionText": "In some cases, approval of the Bank may not be needed before Form M is dispatched to pre-shipment inspection agents in a bills for collection",
         "options": [
             "True",
             "False"
@@ -920,7 +920,7 @@ export const initialQuestions: Question[] = [
         "correctAnswer": "Sends them to his bank"
     },
     {
-        "questionText": "In an import – export transaction, most of the business that transpires is round tripping.",
+        "questionText": "In an import – export transaction, most of the business that transpires is round tripping",
         "options": [
             "True",
             "False"
@@ -928,7 +928,7 @@ export const initialQuestions: Question[] = [
         "correctAnswer": "False"
     },
     {
-        "questionText": "In a bills for collections transaction, shipment of goods precedes delivery of documents.",
+        "questionText": "In a bills for collections transaction, shipment of goods precedes delivery of documents",
         "options": [
             "True",
             "False"
@@ -936,7 +936,7 @@ export const initialQuestions: Question[] = [
         "correctAnswer": "True"
     },
     {
-        "questionText": "In a bills for collection, the law mandates the exporter to ship the goods together with the documents.",
+        "questionText": "In a bills for collection, the law mandates the exporter to ship the goods together with the documents",
         "options": [
             "True",
             "False"
@@ -946,12 +946,12 @@ export const initialQuestions: Question[] = [
     {
         "questionText": "Delivery of documents against acceptance in a Bill for Collection would normally benefit the exporter in what way?",
         "options": [
-            "The exporter can reject the payment after delivery.",
-            "He earns interest on the value of goods.",
-            "The exporter can cancel the transaction at any time.",
-            "It guarantees payment from the importer’s government."
+            "The exporter can reject the payment after delivery",
+            "He earns interest on the value of goods",
+            "The exporter can cancel the transaction at any time",
+            "It guarantees payment from the importer’s government"
         ],
-        "correctAnswer": "He earns interest on the value of goods."
+        "correctAnswer": "He earns interest on the value of goods"
     },
     {
         "questionText": "The major document which is exchanged in a Bill for Collection process is called:",
@@ -964,7 +964,7 @@ export const initialQuestions: Question[] = [
         "correctAnswer": "Bill of Lading"
     },
     {
-        "questionText": "CBN requires that documents evidencing clearance of goods must be submitted by importer to the bank before payment is made to seller.",
+        "questionText": "CBN requires that documents evidencing clearance of goods must be submitted by importer to the bank before payment is made to seller",
         "options": [
             "True",
             "False"
@@ -972,7 +972,7 @@ export const initialQuestions: Question[] = [
         "correctAnswer": "True"
     },
     {
-        "questionText": "Corporate clients are mainly the target market on Bills for collection.",
+        "questionText": "Corporate clients are mainly the target market on Bills for collection",
         "options": [
             "True",
             "False"
@@ -980,7 +980,7 @@ export const initialQuestions: Question[] = [
         "correctAnswer": "True"
     },
     {
-        "questionText": "Access Bank is one of the Best banks in Nigeria known for trade transactions.",
+        "questionText": "Access Bank is one of the Best banks in Nigeria known for trade transactions",
         "options": [
             "True",
             "False"
@@ -988,7 +988,7 @@ export const initialQuestions: Question[] = [
         "correctAnswer": "True"
     },
     {
-        "questionText": "Access Bank will leverage the opportunity of doing trade transactions for top corporate customers to deploy other products.",
+        "questionText": "Access Bank will leverage the opportunity of doing trade transactions for top corporate customers to deploy other products",
         "options": [
             "True",
             "False"
@@ -996,7 +996,7 @@ export const initialQuestions: Question[] = [
         "correctAnswer": "True"
     },
     {
-        "questionText": "Bills for collection is considered an easier and cheaper mode of international trade transaction.",
+        "questionText": "Bills for collection is considered an easier and cheaper mode of international trade transaction",
         "options": [
             "True",
             "False"
@@ -1004,7 +1004,7 @@ export const initialQuestions: Question[] = [
         "correctAnswer": "True"
     },
     {
-        "questionText": "Central Bank of Nigeria does not allow a direct payment to a seller by a buyer in an international trade.",
+        "questionText": "Central Bank of Nigeria does not allow a direct payment to a seller by a buyer in an international trade",
         "options": [
             "True",
             "False"
@@ -1032,7 +1032,7 @@ export const initialQuestions: Question[] = [
         "correctAnswer": "No liability until the goods arrives"
     },
     {
-        "questionText": "If a Bills for collection transaction is consummated based on delivery against acceptance, the importer cannot sell goods, using the proceeds to pay.",
+        "questionText": "If a Bills for collection transaction is consummated based on delivery against acceptance, the importer cannot sell goods, using the proceeds to pay",
         "options": [
             "True",
             "False"
@@ -1040,7 +1040,7 @@ export const initialQuestions: Question[] = [
         "correctAnswer": "True"
     },
     {
-        "questionText": "The contingent liability of an importer crystallizes in Bills for collection immediately the goods arrive and importer acknowledges arrival in good order.",
+        "questionText": "The contingent liability of an importer crystallizes in Bills for collection immediately the goods arrive and importer acknowledges arrival in good order",
         "options": [
             "True",
             "False"
@@ -1048,7 +1048,7 @@ export const initialQuestions: Question[] = [
         "correctAnswer": "True"
     },
     {
-        "questionText": "In a Bills for collection, because the seller is parting with goods and documents while allowing payment at a future date, it is common for interest to be demanded from the seller.",
+        "questionText": "In a Bills for collection, because the seller is parting with goods and documents while allowing payment at a future date, it is common for interest to be demanded from the seller",
         "options": [
             "True",
             "False"
@@ -1066,7 +1066,7 @@ export const initialQuestions: Question[] = [
         "correctAnswer": "Interest earned on delivery against acceptance"
     },
     {
-        "questionText": "Customer acquisition is not a benefit of Bills for collection to Access Bank.",
+        "questionText": "Customer acquisition is not a benefit of Bills for collection to Access Bank",
         "options": [
             "True",
             "False"
@@ -1074,7 +1074,7 @@ export const initialQuestions: Question[] = [
         "correctAnswer": "False"
     },
     {
-        "questionText": "Cash withdrawal directly from a call account is not doable in Access Bank.",
+        "questionText": "Cash withdrawal directly from a call account is not doable in Access Bank",
         "options": [
             "True",
             "False"
@@ -1082,7 +1082,7 @@ export const initialQuestions: Question[] = [
         "correctAnswer": "True"
     },
     {
-        "questionText": "Cash withdrawal directly from a money market account is doable in Access Bank.",
+        "questionText": "Cash withdrawal directly from a money market account is doable in Access Bank",
         "options": [
             "True",
             "False"
@@ -1100,7 +1100,7 @@ export const initialQuestions: Question[] = [
         "correctAnswer": "CCWO"
     },
     {
-        "questionText": "The maximum tenor of an LC according to CBN regulation is 250 days.",
+        "questionText": "The maximum tenor of an LC according to CBN regulation is 250 days",
         "options": [
             "True",
             "False"
@@ -1118,7 +1118,7 @@ export const initialQuestions: Question[] = [
         "correctAnswer": "Risk Assessment Report"
     },
     {
-        "questionText": "After goods have been cleared, an insurance certificate is required from the importer.",
+        "questionText": "After goods have been cleared, an insurance certificate is required from the importer",
         "options": [
             "True",
             "False"
@@ -1126,7 +1126,7 @@ export const initialQuestions: Question[] = [
         "correctAnswer": "False"
     },
     {
-        "questionText": "Form M is not a criterion for importation into Nigeria.",
+        "questionText": "Form M is not a criterion for importation into Nigeria",
         "options": [
             "True",
             "False"
@@ -1142,7 +1142,7 @@ export const initialQuestions: Question[] = [
         "correctAnswer": "False"
     },
     {
-        "questionText": "Visa debit card was launched in Access Bank in 2007.",
+        "questionText": "Visa debit card was launched in Access Bank in 2007",
         "options": [
             "True",
             "False"
@@ -1150,7 +1150,7 @@ export const initialQuestions: Question[] = [
         "correctAnswer": "False"
     },
     {
-        "questionText": "With campus access, you can register for all your courses online.",
+        "questionText": "With campus access, you can register for all your courses online",
         "options": [
             "True",
             "False"
@@ -1158,7 +1158,7 @@ export const initialQuestions: Question[] = [
         "correctAnswer": "False"
     },
     {
-        "questionText": "With the use of Access e-cash cards, merchants can implement loyalty programs to reward customers for their continued patronage.",
+        "questionText": "With the use of Access e-cash cards, merchants can implement loyalty programs to reward customers for their continued patronage",
         "options": [
             "True",
             "False"
@@ -1186,7 +1186,7 @@ export const initialQuestions: Question[] = [
         "correctAnswer": "N500"
     },
     {
-        "questionText": "While using e-cash cards, there is Commission on Turnover (COT).",
+        "questionText": "While using e-cash cards, there is Commission on Turnover (COT)",
         "options": [
             "True",
             "False"
@@ -1207,15 +1207,15 @@ export const initialQuestions: Question[] = [
     {
         "questionText": "Which of the following is true of Access e-cash cards?",
         "options": [
-            "It offers unlimited credit facilities.",
-            "It is linked to a savings account.",
-            "It can be used for overdraft transactions.",
-            "It is a prepaid debit card."
+            "It offers unlimited credit facilities",
+            "It is linked to a savings account",
+            "It can be used for overdraft transactions",
+            "It is a prepaid debit card"
         ],
-        "correctAnswer": "It is a prepaid debit card."
+        "correctAnswer": "It is a prepaid debit card"
     },
     {
-        "questionText": "Njoku, a Visa card holder, walks into the bank and demands a card that would be tied to his account for his brother. What type of card would you recommend to Njoku?",
+        "questionText": "Njoku, a Visa card holder, walks into the bank and demands a card that would be tied to his account for his brother What type of card would you recommend to Njoku?",
         "options": [
             "Supplementary card",
             "Prepaid card",
@@ -1225,7 +1225,7 @@ export const initialQuestions: Question[] = [
         "correctAnswer": "Supplementary card"
     },
     {
-        "questionText": "Using a Visa card on a POS terminal carries no transaction fees.",
+        "questionText": "Using a Visa card on a POS terminal carries no transaction fees",
         "options": [
             "True",
             "False"
@@ -1233,7 +1233,7 @@ export const initialQuestions: Question[] = [
         "correctAnswer": "True"
     },
     {
-        "questionText": "Adedamola has an Access Visa credit card and is relocating; he can still continue to use his card after relocating.",
+        "questionText": "Adedamola has an Access Visa credit card and is relocating; he can still continue to use his card after relocating",
         "options": [
             "True",
             "False"
@@ -1241,7 +1241,7 @@ export const initialQuestions: Question[] = [
         "correctAnswer": "True"
     },
     {
-        "questionText": "Ojo wants to give his Visa card to a friend to use for the meantime. What would be your advice to him?",
+        "questionText": "Ojo wants to give his Visa card to a friend to use for the meantime What would be your advice to him?",
         "options": [
             "Supplementary card",
             "Prepaid card",
@@ -1251,7 +1251,7 @@ export const initialQuestions: Question[] = [
         "correctAnswer": "Supplementary card"
     },
     {
-        "questionText": "A supplementary card has a limit placed on it which is determined by the bank.",
+        "questionText": "A supplementary card has a limit placed on it which is determined by the bank",
         "options": [
             "True",
             "False"
@@ -1269,7 +1269,7 @@ export const initialQuestions: Question[] = [
         "correctAnswer": "Provide reference letters"
     },
     {
-        "questionText": "It is possible to get a Visa debit card, not a credit card.",
+        "questionText": "It is possible to get a Visa debit card, not a credit card",
         "options": [
             "True",
             "False"
@@ -1287,7 +1287,7 @@ export const initialQuestions: Question[] = [
         "correctAnswer": "Unlimited, subject to your card limit"
     },
     {
-        "questionText": "As a marketer, a customer of yours using a Visa card intends to travel and has activated his card. Which unit do you inform of the travel information of the customer?",
+        "questionText": "As a marketer, a customer of yours using a Visa card intends to travel and has activated his card Which unit do you inform of the travel information of the customer?",
         "options": [
             "Sales Department",
             "IT Support",
@@ -1327,7 +1327,7 @@ export const initialQuestions: Question[] = [
         "correctAnswer": "SMS"
     },
     {
-        "questionText": "Ade requests a Visa card with a credit limit of USD 8,000. Which of the following should be advised to Ade?",
+        "questionText": "Ade requests a Visa card with a credit limit of USD 8,000 Which of the following should be advised to Ade?",
         "options": [
             "Silver card",
             "Basic card",
@@ -1337,7 +1337,7 @@ export const initialQuestions: Question[] = [
         "correctAnswer": "Gold card"
     },
     {
-        "questionText": "For a non-account holder of Access Bank, it is possible to get a clean credit to the amount as requested on your Visa credit card.",
+        "questionText": "For a non-account holder of Access Bank, it is possible to get a clean credit to the amount as requested on your Visa credit card",
         "options": [
             "True",
             "False"
@@ -1345,27 +1345,27 @@ export const initialQuestions: Question[] = [
         "correctAnswer": "False"
     },
     {
-        "questionText": "Olu has a Gold card with Access Bank and wants to change to a Platinum card. Which of the following is true?",
+        "questionText": "Olu has a Gold card with Access Bank and wants to change to a Platinum card Which of the following is true?",
         "options": [
-            "Olu can automatically upgrade without any requirements.",
-            "Olu must downgrade to a Silver card first.",
-            "Olu has to make a request for the change and meet the minimum credit limit requirement for a Platinum card.",
+            "Olu can automatically upgrade without any requirements",
+            "Olu must downgrade to a Silver card first",
+            "Olu has to make a request for the change and meet the minimum credit limit requirement for a Platinum card",
             "Olu is not eligible for any card upgrades"
         ],
-        "correctAnswer": "Olu has to make a request for the change and meet the minimum credit limit requirement for a Platinum card."
+        "correctAnswer": "Olu has to make a request for the change and meet the minimum credit limit requirement for a Platinum card"
     },
     {
-        "questionText": "A customer complains that his credit card account was debited with charges he is not aware of. What possibly went wrong?",
+        "questionText": "A customer complains that his credit card account was debited with charges he is not aware of What possibly went wrong?",
         "options": [
-            "The customer forgot to activate his card.",
-            "The customer did not service his credit card account at the end of the month.",
-            " The customer was charged for foreign transaction fees he did not expect.",
-            "The customer has exceeded his credit limit."
+            "The customer forgot to activate his card",
+            "The customer did not service his credit card account at the end of the month",
+            " The customer was charged for foreign transaction fees he did not expect",
+            "The customer has exceeded his credit limit"
         ],
-        "correctAnswer": "The customer did not service his credit card account at the end of the month."
+        "correctAnswer": "The customer did not service his credit card account at the end of the month"
     },
     {
-        "questionText": "My salary account in Access Bank is a criterion to qualify me for a Visa credit card.",
+        "questionText": "My salary account in Access Bank is a criterion to qualify me for a Visa credit card",
         "options": [
             "True",
             "False"
@@ -1373,7 +1373,7 @@ export const initialQuestions: Question[] = [
         "correctAnswer": "True"
     },
     {
-        "questionText": "I can only transact in dollars and naira using the Visa card.",
+        "questionText": "I can only transact in dollars and naira using the Visa card",
         "options": [
             "True",
             "False"
@@ -1382,7 +1382,7 @@ export const initialQuestions: Question[] = [
     },
 
     {
-        "questionText": "I cannot increase the credit limit on my Access Visa Card.",
+        "questionText": "I cannot increase the credit limit on my Access Visa Card",
         "options": [
             "True",
             "False"
@@ -1390,7 +1390,7 @@ export const initialQuestions: Question[] = [
         "correctAnswer": "True"
     },
     {
-        "questionText": "It is possible to get a Visa debit card, and not a credit card.",
+        "questionText": "It is possible to get a Visa debit card, and not a credit card",
         "options": [
             "True",
             "False"
@@ -1398,7 +1398,7 @@ export const initialQuestions: Question[] = [
         "correctAnswer": "True"
     },
     {
-        "questionText": "In order to avoid late payment penalty, a customer should pay up his credit card balance on or before the 20th of each month.",
+        "questionText": "In order to avoid late payment penalty, a customer should pay up his credit card balance on or before the 20th of each month",
         "options": [
             "True",
             "False"
@@ -1408,16 +1408,16 @@ export const initialQuestions: Question[] = [
     {
         "questionText": "By at least what percent of the outstanding balance should be paid up each month?",
         "options": [
-            "0.05",
-            "0.10",
-            "0.20",
-            "0.15"
+            "005",
+            "010",
+            "020",
+            "015"
         ],
-        "correctAnswer": "0.20"
+        "correctAnswer": "020"
     },
 
     {
-        "questionText": "Olu purchased 2 Kenneth Cole shirts online using his credit card. Three hours later, Olu noticed that the purchase did not reflect in his account. What went wrong?",
+        "questionText": "Olu purchased 2 Kenneth Cole shirts online using his credit card Three hours later, Olu noticed that the purchase did not reflect in his account What went wrong?",
         "options": [
             "The payment was declined by the merchant",
             "The day’s transaction reports are sent only at 12 midnight on weekdays",
@@ -1429,15 +1429,15 @@ export const initialQuestions: Question[] = [
     {
         "questionText": "What is the current interest rate charged on Access Visa credit card?",
         "options": [
-            "24% p.a on unpaid balance",
-            "32% p.a on unpaid balance",
-            "29% p.a on unpaid balance",
-            "26% p.a on unpaid balance"
+            "24% pa on unpaid balance",
+            "32% pa on unpaid balance",
+            "29% pa on unpaid balance",
+            "26% pa on unpaid balance"
         ],
-        "correctAnswer": "29% p.a on unpaid balance"
+        "correctAnswer": "29% pa on unpaid balance"
     },
     {
-        "questionText": "Visa Card cannot be used on an ATM machine.",
+        "questionText": "Visa Card cannot be used on an ATM machine",
         "options": [
             "True",
             "False"
@@ -1445,14 +1445,14 @@ export const initialQuestions: Question[] = [
         "correctAnswer": "False"
     },
     {
-        "questionText": "Tomiwa, a Visa card holder with Access Bank, walks into the banking hall raging with anger for being unable to activate his card. Which of the following would you do as a customer care officer?",
+        "questionText": "Tomiwa, a Visa card holder with Access Bank, walks into the banking hall raging with anger for being unable to activate his card Which of the following would you do as a customer care officer?",
         "options": [
-            "Help him call customer care to activate his card.",
-            "Advise him to leave and try again later.",
-            "Tell him to check the bank's website for activation instructions.",
-            "Ignore his complaints since it’s not your responsibility."
+            "Help him call customer care to activate his card",
+            "Advise him to leave and try again later",
+            "Tell him to check the bank's website for activation instructions",
+            "Ignore his complaints since it’s not your responsibility"
         ],
-        "correctAnswer": "Help him call customer care to activate his card."
+        "correctAnswer": "Help him call customer care to activate his card"
     },
     {
         "questionText": "The target customers for WUMT include:",
@@ -1475,7 +1475,7 @@ export const initialQuestions: Question[] = [
         "correctAnswer": "$10,000 or its equivalent"
     },
     {
-        "questionText": "Transferred fund can be collected in only Naira.",
+        "questionText": "Transferred fund can be collected in only Naira",
         "options": [
             "True",
             "False"
@@ -1483,7 +1483,7 @@ export const initialQuestions: Question[] = [
         "correctAnswer": "False"
     },
     {
-        "questionText": "Using WUMT services, the beneficiary gets paid 24 hours after.",
+        "questionText": "Using WUMT services, the beneficiary gets paid 24 hours after",
         "options": [
             "True",
             "False"
@@ -1491,7 +1491,7 @@ export const initialQuestions: Question[] = [
         "correctAnswer": "False"
     },
     {
-        "questionText": "For all transactions below US$300, a student ID card would be a valid means of identification.",
+        "questionText": "For all transactions below US$300, a student ID card would be a valid means of identification",
         "options": [
             "True",
             "False"
@@ -1499,7 +1499,7 @@ export const initialQuestions: Question[] = [
         "correctAnswer": "True"
     },
     {
-        "questionText": "All but one is a means of identification acceptable for transactions above USD 300.00:",
+        "questionText": "All but one is a means of identification acceptable for transactions above USD 30000:",
         "options": [
             "Company ID card",
             "National Passport",
@@ -1509,7 +1509,7 @@ export const initialQuestions: Question[] = [
         "correctAnswer": "Company ID card"
     },
     {
-        "questionText": "Nigeria is a receive only country.",
+        "questionText": "Nigeria is a receive only country",
         "options": [
             "True",
             "False"
@@ -1517,14 +1517,14 @@ export const initialQuestions: Question[] = [
         "correctAnswer": "True"
     },
     {
-        "questionText": "For all contractual relationships the bank has with WUMT, it earns an income of ---- on the commissions of all transfers liquidated in the bank.",
+        "questionText": "For all contractual relationships the bank has with WUMT, it earns an income of ---- on the commissions of all transfers liquidated in the bank",
         "options": [
-            "0.15",
-            "0.22",
-            "0.30",
-            "0.18"
+            "015",
+            "022",
+            "030",
+            "018"
         ],
-        "correctAnswer": "0.22"
+        "correctAnswer": "022"
     },
     {
         "questionText": "Transfers to other bank accounts using Access Mobile carry a fee of:",
@@ -1606,7 +1606,7 @@ export const initialQuestions: Question[] = [
         "correctAnswer": "True"
     },
     {
-        "questionText": "The cost of switching is charged to every account credited via the solution, and must not be less than N100.00:",
+        "questionText": "The cost of switching is charged to every account credited via the solution, and must not be less than N10000:",
         "options": [
             "True",
             "False"
@@ -1616,12 +1616,12 @@ export const initialQuestions: Question[] = [
     {
         "questionText": "On every transaction carried out using PHCN online, the COT income is:",
         "options": [
-            "1.5 per mille",
-            "1.8 per mille",
-            "2.0 per mille",
-            "2.2 per mille"
+            "15 per mille",
+            "18 per mille",
+            "20 per mille",
+            "22 per mille"
         ],
-        "correctAnswer": "2.2 per mille"
+        "correctAnswer": "22 per mille"
     },
     {
         "questionText": "PHCN online does not run on the Interswitch platform:",
@@ -1708,7 +1708,7 @@ export const initialQuestions: Question[] = [
         "correctAnswer": "False"
     },
     {
-        "questionText": "The access e-cash cards cannot be co-branded with Access Bank.",
+        "questionText": "The access e-cash cards cannot be co-branded with Access Bank",
         "options": [
             "True",
             "False"
@@ -1724,7 +1724,7 @@ export const initialQuestions: Question[] = [
         "correctAnswer": "False"
     },
     {
-        "questionText": "All Petroleum products importation into the country must have a Risk Assessment Report (RAR).",
+        "questionText": "All Petroleum products importation into the country must have a Risk Assessment Report (RAR)",
         "options": [
             "True",
             "False"
@@ -1765,12 +1765,12 @@ export const initialQuestions: Question[] = [
     {
         "questionText": "The interest rate by default of the Solo Account is:",
         "options": [
-            "0.02",
-            "0.04",
-            "0.05",
-            "0.03"
+            "002",
+            "004",
+            "005",
+            "003"
         ],
-        "correctAnswer": "0.04"
+        "correctAnswer": "004"
     },
     {
         "questionText": "Monthly maintenance fee for Solo Account is N50",
@@ -1851,10 +1851,10 @@ export const initialQuestions: Question[] = [
     {
         "questionText": "The COT charge for the Access Advantage Account is:",
         "options": [
-            "0.5% per mille",
+            "05% per mille",
             "0% per mille",
             "1% per mille",
-            "0.2% per mille"
+            "02% per mille"
         ],
         "correctAnswer": "0% per mille"
     },
@@ -1875,34 +1875,34 @@ export const initialQuestions: Question[] = [
         "correctAnswer": "False"
     },
     {
-        "questionText": "Access Advantage Account with a quarterly average balance of N100,000 - 499,999.99 attracts bonus interest of:",
+        "questionText": "Access Advantage Account with a quarterly average balance of N100,000 - 499,99999 attracts bonus interest of:",
         "options": [
-            "0.002 (0.2%)",
-            "0.003 (0.3%)",
-            "0.004 (0.4%)",
-            "0.005 (0.5%)"
+            "0002 (02%)",
+            "0003 (03%)",
+            "0004 (04%)",
+            "0005 (05%)"
         ],
-        "correctAnswer": "0.005 (0.5%)"
+        "correctAnswer": "0005 (05%)"
     },
     {
         "questionText": "Access Advantage Account with a quarterly average balance of N1,000,000 and above attracts bonus interest of:",
         "options": [
-            "0.010 (1.0%)",
-            "0.005 (0.5%)",
-            "0.015 (1.5%)",
-            "0.020 (2.0%)"
+            "0010 (10%)",
+            "0005 (05%)",
+            "0015 (15%)",
+            "0020 (20%)"
         ],
-        "correctAnswer": "0.015 (1.5%)"
+        "correctAnswer": "0015 (15%)"
     },
     {
-        "questionText": "Access Advantage Account with a quarterly average balance of N500,000 - 999,999.99 attracts a bonus interest of:",
+        "questionText": "Access Advantage Account with a quarterly average balance of N500,000 - 999,99999 attracts a bonus interest of:",
         "options": [
-            "0.01 (1.0%)",
-            "0.008 (0.8%)",
-            "0.012 (1.2%)",
-            "0.015 (1.5%)"
+            "001 (10%)",
+            "0008 (08%)",
+            "0012 (12%)",
+            "0015 (15%)"
         ],
-        "correctAnswer": "0.01 (1.0%)"
+        "correctAnswer": "001 (10%)"
     },
     {
         "questionText": "Standard Current Accounts are also known as demand deposit accounts",
@@ -2017,12 +2017,12 @@ export const initialQuestions: Question[] = [
     {
         "questionText": "Access Premier Account holders will enjoy a free magazine subscription (1 year) for accounts with an average quarterly balance exceeding N………… at the end of the financial year:",
         "options": [
-            "N2.5mm",
+            "N25mm",
             "N1mm",
-            "N1.5mm",
+            "N15mm",
             "N3mm"
         ],
-        "correctAnswer": "N2.5mm"
+        "correctAnswer": "N25mm"
     },
     {
         "questionText": "Cannibalisation of current account is one of the risks of Access Premier Accounts",
@@ -2055,18 +2055,18 @@ export const initialQuestions: Question[] = [
     {
         "questionText": "The interest rate for the Access Premier Account is:",
         "options": [
-            "0.01 (1%)",
-            "0.015 (1.5%)",
-            "0.02 (2%)",
-            "0.025 (2.5%)"
+            "001 (1%)",
+            "0015 (15%)",
+            "002 (2%)",
+            "0025 (25%)"
         ],
-        "correctAnswer": "0.02 (2%)"
+        "correctAnswer": "002 (2%)"
     },
     {
         "questionText": "The COT for the Access Premier Account is:",
         "options": [
             "1% per mille",
-            "1.5% per mille",
+            "15% per mille",
             "0% per mille",
             "2% per mille"
         ],
@@ -2075,12 +2075,12 @@ export const initialQuestions: Question[] = [
     {
         "questionText": "The following percentage of deposit can act as collateral for a loan in respect of the Access Premier Account:",
         "options": [
-            "0.7",
-            "0.5",
-            "0.3",
-            "0.2"
+            "07",
+            "05",
+            "03",
+            "02"
         ],
-        "correctAnswer": "0.7"
+        "correctAnswer": "07"
     },
     {
         "questionText": "Access Premier Accounts can be opened but not operational until satisfactory KYC information is obtained",
@@ -2091,7 +2091,7 @@ export const initialQuestions: Question[] = [
         "correctAnswer": "True"
     },
     {
-        "questionText": "All references must be gotten before withdrawals on the Access Premier Account are allowed.",
+        "questionText": "All references must be gotten before withdrawals on the Access Premier Account are allowed",
         "options": [
             "True",
             "False"
@@ -2128,7 +2128,7 @@ export const initialQuestions: Question[] = [
             "1% per mille",
             "0 per mille",
             "2% per mille",
-            "0.5% per mille"
+            "05% per mille"
         ],
         "correctAnswer": "0% per mille"
     },
@@ -2145,32 +2145,32 @@ export const initialQuestions: Question[] = [
     {
         "questionText": "N250,000 balance on an Mpower Biz Account will attract a yield of:",
         "options": [
-            "0.005",
-            "0.008",
-            "0.015",
-            "0.01"
+            "0005",
+            "0008",
+            "0015",
+            "001"
         ],
-        "correctAnswer": "0.01"
+        "correctAnswer": "001"
     },
     {
         "questionText": "N250,000 - N500,000 balance on an Mpower Biz Account will attract a yield of:",
         "options": [
-            "0.015",
-            "0.01",
-            "0.005",
-            "0.02"
+            "0015",
+            "001",
+            "0005",
+            "002"
         ],
-        "correctAnswer": "0.015"
+        "correctAnswer": "0015"
     },
     {
         "questionText": "N500,000 and above balance on an Mpower Biz Account will attract a yield of:",
         "options": [
-            "0.015",
-            "0.01",
-            "0.02",
-            "0.005"
+            "0015",
+            "001",
+            "002",
+            "0005"
         ],
-        "correctAnswer": "0.02"
+        "correctAnswer": "002"
     },
     {
         "questionText": "The opening balance of the Mpower Biz Account is:",
@@ -2210,34 +2210,34 @@ export const initialQuestions: Question[] = [
         "correctAnswer": "Companies and their employees"
     },
     {
-        "questionText": "Mpower Salary Account holders are entitled to ….% of net monthly salary as overdraft.",
+        "questionText": "Mpower Salary Account holders are entitled to …% of net monthly salary as overdraft",
         "options": [
-            "0.50",
-            "0.75",
-            "1.00",
-            "1.25"
+            "050",
+            "075",
+            "100",
+            "125"
         ],
-        "correctAnswer": "0.75"
+        "correctAnswer": "075"
     },
     {
         "questionText": "What percentage of net annual salary of Mpower Salary Account holders is set aside for Personal Time Loan?",
         "options": [
-            "0.15",
-            "0.20",
-            "0.25",
-            "0.30"
+            "015",
+            "020",
+            "025",
+            "030"
         ],
-        "correctAnswer": "0.25"
+        "correctAnswer": "025"
     },
     {
-        "questionText": "Unless otherwise stated, _____% of net monthly salary is debited and moved to an investment savings account for the Mpower Salary Account holder.",
+        "questionText": "Unless otherwise stated, _____% of net monthly salary is debited and moved to an investment savings account for the Mpower Salary Account holder",
         "options": [
-            "0.03%",
-            "0.05%",
-            "0.07%",
-            "0.10%"
+            "003%",
+            "005%",
+            "007%",
+            "010%"
         ],
-        "correctAnswer": "0.05%"
+        "correctAnswer": "005%"
     },
     {
         "questionText": "The free initial cheque leaf given to Mpower Salary Account holders is –",
@@ -2260,8 +2260,8 @@ export const initialQuestions: Question[] = [
     {
         "questionText": "mpower Salary Account holders are not usually the bank customers but employees of the organizations",
         "options": [
-            "true",
-            "false"
+            "True",
+            "False"
         ],
         "correctAnswer": "False"
     },
@@ -2278,22 +2278,22 @@ export const initialQuestions: Question[] = [
     {
         "questionText": "The interest rate for the overdraft on Mpower Salary Account is",
         "options": [
-            "0.02",
-            "0.03",
-            "0.04",
-            "0.05"
+            "002",
+            "003",
+            "004",
+            "005"
         ],
-        "correctAnswer": "0.03"
+        "correctAnswer": "003"
     },
     {
         "questionText": "The management fee for Mpower Salary Account personal loan is",
         "options": [
-            "0.005",
-            "0.01",
-            "0.015",
-            "0.02"
+            "0005",
+            "001",
+            "0015",
+            "002"
         ],
-        "correctAnswer": "0.01"
+        "correctAnswer": "001"
     },
     {
         "questionText": "Auto online is a web based Vehicle leasing facility which can be accessed from anywhere there is a web connection",
@@ -2327,12 +2327,12 @@ export const initialQuestions: Question[] = [
     {
         "questionText": "The unpaid rentals penalty per day for auto online defaulters is",
         "options": [
-            "0.05",
-            "0.015",
-            "0.025",
-            "0.01"
+            "005",
+            "0015",
+            "0025",
+            "001"
         ],
-        "correctAnswer": "0.025"
+        "correctAnswer": "0025"
     },
     {
         "questionText": "Accessbank Vehicle Fleet Finance is designed to cater for institutional customers",
@@ -2439,7 +2439,7 @@ export const initialQuestions: Question[] = [
         "correctAnswer": "Board of Directors"
     },
     {
-        "questionText": "The off hour register is one of the registers maintained at the branch. A control officer is expected to review this register",
+        "questionText": "The off hour register is one of the registers maintained at the branch A control officer is expected to review this register",
         "options": [
             "Monthly",
             "Daily",
@@ -2449,7 +2449,7 @@ export const initialQuestions: Question[] = [
         "correctAnswer": "Weekly"
     },
     {
-        "questionText": "The established threshold for items in suspense/transit accounts such as Account Receivable (Hold Over), Vault Cash in Transit, etc. is",
+        "questionText": "The established threshold for items in suspense/transit accounts such as Account Receivable (Hold Over), Vault Cash in Transit, etc is",
         "options": [
             "12 hours",
             "48 hours",
@@ -2469,7 +2469,7 @@ export const initialQuestions: Question[] = [
         "correctAnswer": "Quarterly"
     },
     {
-        "questionText": "The Access Bank Business Continuity Plan (BCP) entails that a fire drill be carried out at every location. The frequency of the fire drill is",
+        "questionText": "The Access Bank Business Continuity Plan (BCP) entails that a fire drill be carried out at every location The frequency of the fire drill is",
         "options": [
             "Monthly",
             "Quarterly",
@@ -2507,7 +2507,7 @@ export const initialQuestions: Question[] = [
         "correctAnswer": "Valid proxy from non-account holder of Access Bank"
     },
     {
-        "questionText": "Clearing GLs are GLs for _________proofing.",
+        "questionText": "Clearing GLs are GLs for _________proofing",
         "options": [
             "Monthly",
             "Weekly",
@@ -2517,7 +2517,7 @@ export const initialQuestions: Question[] = [
         "correctAnswer": "Daily"
     },
     {
-        "questionText": "Clearing GLs are GLs for _________proofing.",
+        "questionText": "Clearing GLs are GLs for _________proofing",
         "options": [
             "Monthly",
             "Weekly",
@@ -2555,7 +2555,7 @@ export const initialQuestions: Question[] = [
         "correctAnswer": "False"
     },
     {
-        "questionText": "According to the internal control framework, all Managers' Cheques (MCs) must be issued and recorded serially. This means:",
+        "questionText": "According to the internal control framework, all Managers' Cheques (MCs) must be issued and recorded serially This means:",
         "options": [
             "Random recording of drafts without any specific order",
             "Grouping of drafts by transaction type",
@@ -2565,7 +2565,7 @@ export const initialQuestions: Question[] = [
         "correctAnswer": "Sequential recording of the drafts using the draft number"
     },
     {
-        "questionText": "In the review of account maintenance, the control officer should ensure that relevant fields are appropriately maintained on the database without necessarily referring to any source document.",
+        "questionText": "In the review of account maintenance, the control officer should ensure that relevant fields are appropriately maintained on the database without necessarily referring to any source document",
         "options": [
             "True",
             "False"
@@ -2783,7 +2783,7 @@ export const initialQuestions: Question[] = [
         "correctAnswer": "True"
     },
     {
-        "questionText": "The main objective of the statement rendition process is to ensure that customers’ account statements are delivered to their addresses in a timely manner. Manual statement rendition is outsourced, while e-Statement rendition to subscribing customers is auto-activated on the:",
+        "questionText": "The main objective of the statement rendition process is to ensure that customers’ account statements are delivered to their addresses in a timely manner Manual statement rendition is outsourced, while e-Statement rendition to subscribing customers is auto-activated on the:",
         "options": [
             "Last working day of the month",
             "First working day of each month",
@@ -2815,7 +2815,7 @@ export const initialQuestions: Question[] = [
     {
         "questionText": "Does Access Premier account attract interest payment, and at what rate?",
         "options": [
-            "Yes, the interest on the account is 0.5% per annum",
+            "Yes, the interest on the account is 05% per annum",
             "Yes, the interest on the account is 1% per annum",
             "No, this account does not attract interest",
             "Yes, the interest on the account is 2% per annum"
@@ -2966,12 +2966,12 @@ export const initialQuestions: Question[] = [
     {
         "questionText": "What is the maximum percentage of a customer’s salary who owns an Mpower Salary Account that is offered as a Salary Advance?",
         "options": [
-            "0.3",
-            "0.5",
-            "0.7",
-            "0.4"
+            "03",
+            "05",
+            "07",
+            "04"
         ],
-        "correctAnswer": "0.5"
+        "correctAnswer": "05"
     },
     {
         "questionText": "Financial Literacy Campaign is a benefit of which of the accounts below?",
@@ -3134,7 +3134,7 @@ export const initialQuestions: Question[] = [
         "correctAnswer": "10 years"
     },
     {
-        "questionText": "State 2 applications used for customers’ account balance enquiry.",
+        "questionText": "State 2 applications used for customers’ account balance enquiry",
         "options": [
             "InfoPool and Balance Checker",
             "Transaction History and Profile Update",
@@ -3184,7 +3184,7 @@ export const initialQuestions: Question[] = [
         "correctAnswer": "Arial, 12, and blue"
     },
     {
-        "questionText": "eGain always gives _____ to all inbound mails received.",
+        "questionText": "eGain always gives _____ to all inbound mails received",
         "options": [
             "Auto Response",
             "Manual Response",
@@ -3249,7 +3249,7 @@ export const initialQuestions: Question[] = [
         "correctAnswer": "Dora the Explorer"
     },
     {
-        "questionText": "In Access FT, _________ means that all charges—which include Access Bank’s handling, telex, and VAT charges + offshore charges are to be borne by the beneficiary. Therefore, the beneficiary will receive less than the amount transferred.",
+        "questionText": "In Access FT, _________ means that all charges—which include Access Bank’s handling, telex, and VAT charges + offshore charges are to be borne by the beneficiary Therefore, the beneficiary will receive less than the amount transferred",
         "options": [
             "SHA",
             "OUR",
@@ -3259,7 +3259,7 @@ export const initialQuestions: Question[] = [
         "correctAnswer": "BEN"
     },
     {
-        "questionText": "In Access FT, _________ means that offshore charges ONLY are borne by the beneficiary. The beneficiary will receive less than the amount transferred.",
+        "questionText": "In Access FT, _________ means that offshore charges ONLY are borne by the beneficiary The beneficiary will receive less than the amount transferred",
         "options": [
             "BEN",
             "OUR",
@@ -3269,7 +3269,7 @@ export const initialQuestions: Question[] = [
         "correctAnswer": "SHA"
     },
     {
-        "questionText": "In Access FT, _________ means that offshore charges are borne by the remitter, including the local charges, so all the banks in the transfer chain are expected to pass their charges to Access Bank, allowing the beneficiary to receive the full amount transferred.",
+        "questionText": "In Access FT, _________ means that offshore charges are borne by the remitter, including the local charges, so all the banks in the transfer chain are expected to pass their charges to Access Bank, allowing the beneficiary to receive the full amount transferred",
         "options": [
             "BEN",
             "SHA",
@@ -3341,12 +3341,12 @@ export const initialQuestions: Question[] = [
     {
         "questionText": "Does the Access Premier account attract interest payment, and at what rate?",
         "options": [
-            "Yes, 0.5% p.a.",
-            "Yes, 0.1% p.a.",
+            "Yes, 05% pa",
+            "Yes, 01% pa",
             "No, it does not",
-            "Yes, 0.2% p.a."
+            "Yes, 02% pa"
         ],
-        "correctAnswer": "Yes, 0.1% p.a."
+        "correctAnswer": "Yes, 01% pa"
     },
     {
         "questionText": "Which of these products is not designed for individuals?",
@@ -3372,7 +3372,7 @@ export const initialQuestions: Question[] = [
         "questionText": "What is the minimum daily balance and maximum turnover on Mpower Biz Classic?",
         "options": [
             "30k and 2mm",
-            "25k and 1.5mm",
+            "25k and 15mm",
             "20k and 10mm",
             "15k and 500k"
         ],
@@ -3549,12 +3549,12 @@ export const initialQuestions: Question[] = [
     {
         "questionText": "What is the interest rate on Standard Savings?",
         "options": [
-            "0.02",
-            "0.036",
-            "0.05",
-            "0.04"
+            "002",
+            "0036",
+            "005",
+            "004"
         ],
-        "correctAnswer": "0.036"
+        "correctAnswer": "0036"
     },
     {
         "questionText": "What type of account is Mpower Salary?",
