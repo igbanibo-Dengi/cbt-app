@@ -8,7 +8,7 @@ import { Label } from "@/components/ui/label"
 import { AlertCircle, CheckCircle2, Menu } from "lucide-react"
 import { Drawer, DrawerContent, DrawerTrigger } from "@/components/ui/drawer"
 import { ScrollArea } from "@/components/ui/scroll-area"
-import { initialQuestions } from './newData'
+import { initialQuestions } from '@/app/test-2/quizData2[1]'
 
 type Question = {
     questionText: string
@@ -98,8 +98,9 @@ export default function Quiz({ title = "Quiz" }: { title?: string }) {
     )
 
     return (
-        <div className="flex flex-col lg:flex-row gap-4 p-4 md:h-screen">
+        <div className="flex flex-col lg:flex-row gap-4 p-4 md:min-h-screen">
             <Card className="w-full lg:w-2/3 flex flex-col">
+                {/* <ScrollArea className="flex-grow"> */}
                 <CardHeader>
                     <div className='flex flex-col space-y-2'>
                         <CardTitle>{title}</CardTitle>
@@ -116,49 +117,48 @@ export default function Quiz({ title = "Quiz" }: { title?: string }) {
                         </Button>
                     </div>
                 </CardHeader>
-                <ScrollArea className="flex-grow">
-                    <CardContent>
-                        {getQuestionsForCurrentPage().map((question, index) => {
-                            const questionIndex = currentPage * questionsPerPage + index
-                            return (
-                                <div key={question.questionText} className="mb-6">
-                                    <h2 className="text-lg font-semibold mb-4">{question.questionText}</h2>
-                                    <RadioGroup
-                                        onValueChange={(value) => handleOptionClick(value, questionIndex)}
-                                        value={answers[questionIndex] || ''}
-                                    >
-                                        {question.options.map((option, idx) => (
-                                            <div key={option} className="flex items-center space-x-2 mb-2">
-                                                <RadioGroupItem value={option} id={`option-${questionIndex}-${idx}`} />
-                                                <Label htmlFor={`option-${questionIndex}-${idx}`} className="flex-grow p-2 rounded-md hover:bg-gray-100">
-                                                    {option}
-                                                </Label>
-                                            </div>
-                                        ))}
-                                    </RadioGroup>
-                                    {answers[questionIndex] !== undefined && (
-                                        <div className="mt-4 flex items-center">
-                                            {answers[questionIndex] === question.correctAnswer ? (
-                                                <>
-                                                    <CheckCircle2 className="text-green-500 mr-2" />
-                                                    <p className="text-green-600 font-medium">Correct!</p>
-                                                </>
-                                            ) : (
-                                                <>
-                                                    <AlertCircle className="text-red-500 mr-2" />
-                                                    <p className="text-red-600 font-medium">
-                                                        Incorrect. The correct answer is{' '}
-                                                        <span className="font-bold">{question.correctAnswer}</span>.
-                                                    </p>
-                                                </>
-                                            )}
+                <CardContent>
+                    {getQuestionsForCurrentPage().map((question, index) => {
+                        const questionIndex = currentPage * questionsPerPage + index
+                        return (
+                            <div key={question.questionText} className="mb-6">
+                                <h2 className="text-lg font-semibold mb-4">{question.questionText}</h2>
+                                <RadioGroup
+                                    onValueChange={(value) => handleOptionClick(value, questionIndex)}
+                                    value={answers[questionIndex] || ''}
+                                >
+                                    {question.options.map((option, idx) => (
+                                        <div key={option} className="flex items-center space-x-2 mb-2">
+                                            <RadioGroupItem value={option} id={`option-${questionIndex}-${idx}`} />
+                                            <Label htmlFor={`option-${questionIndex}-${idx}`} className="flex-grow p-2 rounded-md hover:bg-gray-100">
+                                                {option}
+                                            </Label>
                                         </div>
-                                    )}
-                                </div>
-                            )
-                        })}
-                    </CardContent>
-                </ScrollArea>
+                                    ))}
+                                </RadioGroup>
+                                {answers[questionIndex] !== undefined && (
+                                    <div className="mt-4 flex items-center">
+                                        {answers[questionIndex] === question.correctAnswer ? (
+                                            <>
+                                                <CheckCircle2 className="text-green-500 mr-2" />
+                                                <p className="text-green-600 font-medium">Correct!</p>
+                                            </>
+                                        ) : (
+                                            <>
+                                                <AlertCircle className="text-red-500 mr-2" />
+                                                <p className="text-red-600 font-medium">
+                                                    Incorrect. The correct answer is{' '}
+                                                    <span className="font-bold">{question.correctAnswer}</span>.
+                                                </p>
+                                            </>
+                                        )}
+                                    </div>
+                                )}
+                            </div>
+                        )
+                    })}
+                </CardContent>
+                {/* </ScrollArea> */}
             </Card>
             <div className="w-full lg:w-1/3">
                 <div className="hidden lg:block sticky top-4">
